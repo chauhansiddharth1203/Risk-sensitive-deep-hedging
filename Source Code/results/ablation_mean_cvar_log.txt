@@ -1,0 +1,74 @@
+
+=== Training λ = 0.0 ===
+    λ=0.00  ep    1  CVaR=-23.73  |mean|=6.76
+    λ=0.00  ep   50  CVaR=-12.75  |mean|=2.55
+    λ=0.00  ep  100  CVaR=-3.93  |mean|=16.65
+    λ=0.00  ep  150  CVaR=+1.58  |mean|=47.64
+    λ=0.00  ep  200  CVaR=+5.73  |mean|=54.84
+    λ=0.00  ep  250  CVaR=+11.23  |mean|=63.11
+    λ=0.00  ep  300  CVaR=+11.36  |mean|=65.75
+    λ=0.00  ep  350  CVaR=+7.72  |mean|=59.92
+    λ=0.00  ep  400  CVaR=-4.96  |mean|=57.28
+    λ=0.00  ep  450  CVaR=-3.63  |mean|=58.90
+    λ=0.00  ep  500  CVaR=-15.96  |mean|=49.66
+  λ=0.00  mean=+49.871  std=30.662  CVaR95=-8.063  CVaR99=-32.849
+
+=== Training λ = 0.5 ===
+    λ=0.50  ep    1  CVaR=-26.18  |mean|=7.48
+    λ=0.50  ep   50  CVaR=-11.69  |mean|=1.27
+    λ=0.50  ep  100  CVaR=-8.95  |mean|=2.79
+    λ=0.50  ep  150  CVaR=-8.35  |mean|=3.95
+    λ=0.50  ep  200  CVaR=-9.64  |mean|=3.38
+    λ=0.50  ep  250  CVaR=-8.94  |mean|=3.49
+    λ=0.50  ep  300  CVaR=-9.68  |mean|=1.21
+    λ=0.50  ep  350  CVaR=-9.86  |mean|=1.02
+    λ=0.50  ep  400  CVaR=-8.09  |mean|=1.23
+    λ=0.50  ep  450  CVaR=-8.18  |mean|=0.53
+    λ=0.50  ep  500  CVaR=-8.96  |mean|=1.30
+  λ=0.50  mean=+1.158  std=5.202  CVaR95=-9.388  CVaR99=-12.752
+
+=== Training λ = 1.0 ===
+    λ=1.00  ep    1  CVaR=-26.18  |mean|=7.48
+    λ=1.00  ep   50  CVaR=-10.82  |mean|=0.96
+    λ=1.00  ep  100  CVaR=-9.84  |mean|=0.98
+    λ=1.00  ep  150  CVaR=-10.91  |mean|=0.08
+    λ=1.00  ep  200  CVaR=-10.92  |mean|=0.43
+    λ=1.00  ep  250  CVaR=-11.11  |mean|=0.19
+    λ=1.00  ep  300  CVaR=-10.13  |mean|=0.14
+    λ=1.00  ep  350  CVaR=-10.69  |mean|=0.07
+    λ=1.00  ep  400  CVaR=-8.28  |mean|=0.86
+    λ=1.00  ep  450  CVaR=-8.27  |mean|=0.55
+    λ=1.00  ep  500  CVaR=-9.69  |mean|=0.26
+  λ=1.00  mean=+0.254  std=4.916  CVaR95=-9.956  CVaR99=-13.981
+
+=== Training λ = 2.0 ===
+    λ=2.00  ep    1  CVaR=-26.18  |mean|=7.48
+    λ=2.00  ep   50  CVaR=-11.61  |mean|=1.16
+    λ=2.00  ep  100  CVaR=-10.43  |mean|=0.56
+    λ=2.00  ep  150  CVaR=-11.18  |mean|=0.05
+    λ=2.00  ep  200  CVaR=-11.35  |mean|=0.45
+    λ=2.00  ep  250  CVaR=-11.58  |mean|=0.38
+    λ=2.00  ep  300  CVaR=-11.78  |mean|=0.64
+    λ=2.00  ep  350  CVaR=-12.06  |mean|=0.49
+    λ=2.00  ep  400  CVaR=-10.67  |mean|=0.48
+    λ=2.00  ep  450  CVaR=-9.10  |mean|=0.59
+    λ=2.00  ep  500  CVaR=-10.26  |mean|=0.21
+  λ=2.00  mean=-0.174  std=4.962  CVaR95=-10.767  CVaR99=-15.325
+
+=== Training λ = 5.0 ===
+    λ=5.00  ep    1  CVaR=-26.18  |mean|=7.48
+    λ=5.00  ep   50  CVaR=-13.10  |mean|=0.76
+    λ=5.00  ep  100  CVaR=-11.45  |mean|=0.80
+    λ=5.00  ep  150  CVaR=-12.00  |mean|=0.21
+    λ=5.00  ep  200  CVaR=-11.54  |mean|=0.30
+    λ=5.00  ep  250  CVaR=-12.01  |mean|=0.32
+    λ=5.00  ep  300  CVaR=-12.63  |mean|=0.68
+    λ=5.00  ep  350  CVaR=-12.35  |mean|=0.37
+    λ=5.00  ep  400  CVaR=-12.92  |mean|=0.31
+    λ=5.00  ep  450  CVaR=-12.40  |mean|=0.09
+    λ=5.00  ep  500  CVaR=-12.53  |mean|=0.20
+  λ=5.00  mean=-0.339  std=6.415  CVaR95=-14.523  CVaR99=-20.959
+
+Saved:
+  results/ablation_mean_cvar_frontier.png
+  results/ablation_mean_cvar_table.txt

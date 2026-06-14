@@ -1,0 +1,82 @@
+
+[seed=0  gate thr_init=3.0 sc_init=0.15 frozen=True] training...
+ep    1  loss=+197.609  CVaR_train=-175.287  CVaR_val=-49.540  gate(thr=3.000, sc=0.150)
+ep   50  loss=+168.116  CVaR_train=-149.470  CVaR_val=-49.564  gate(thr=3.000, sc=0.150)
+ep  100  loss=+148.478  CVaR_train=-131.145  CVaR_val=-35.869  gate(thr=3.000, sc=0.150)
+ep  150  loss=+111.879  CVaR_train=-98.570  CVaR_val=-37.199  gate(thr=3.000, sc=0.150)
+ep  200  loss=+131.970  CVaR_train=-118.909  CVaR_val=-33.035  gate(thr=3.000, sc=0.150)
+ep  250  loss=+119.293  CVaR_train=-108.617  CVaR_val=-30.731  gate(thr=3.000, sc=0.150)
+ep  300  loss=+125.872  CVaR_train=-117.523  CVaR_val=-36.085  gate(thr=3.000, sc=0.150)
+ep  350  loss=+132.839  CVaR_train=-123.286  CVaR_val=-33.819  gate(thr=3.000, sc=0.150)
+ep  400  loss=+141.822  CVaR_train=-133.779  CVaR_val=-40.510  gate(thr=3.000, sc=0.150)
+[seed=0] evaluating... (final gate: thr=3.000, sc=0.150)
+2008 GFC (in-train)              n= 89  BS= -13.54[-14.17,-11.03]  DH= -15.47[-17.46,-11.68]  Delta= -1.92[ -4.95, +1.23]
+2017 Calm (in-train)             n= 72  BS=  -3.92[ -5.47, -2.68]  DH=  -4.44[ -4.76, -3.19]  Delta= -0.52[ -1.63, +0.70]
+2018 Volmageddon (in-train)      n= 45  BS=  -4.35[ -4.39, -3.54]  DH=  -4.28[ -4.29, -3.83]  Delta= +0.07[ -0.62, +0.47]
+2020 COVID (in-train)            n= 55  BS= -13.81[-14.00, -9.63]  DH= -15.02[-15.13, -4.84]  Delta= -1.20[ -1.51, +4.87]
+2022 Rate shock (OOT)            n= 45  BS=  -7.55[ -8.08, -5.46]  DH=  -8.15[ -8.37, -7.66]  Delta= -0.60[ -2.40, +0.32]
+2023 SVB / banking (OOT)         n= 45  BS=  -6.21[ -7.96, -3.83]  DH=  -6.52[ -7.60, -3.65]  Delta= -0.31[ -1.38, +0.61]
+2024 Full year (OOT)             n= 46  BS=  -5.44[ -5.65, -4.09]  DH=  -4.34[ -4.89, -3.65]  Delta= +1.11[ +0.13, +1.92]
+
+[seed=1  gate thr_init=3.0 sc_init=0.15 frozen=True] training...
+ep    1  loss=+158.894  CVaR_train=-141.292  CVaR_val=-50.462  gate(thr=3.000, sc=0.150)
+ep   50  loss=+171.613  CVaR_train=-152.713  CVaR_val=-44.734  gate(thr=3.000, sc=0.150)
+ep  100  loss=+160.300  CVaR_train=-142.307  CVaR_val=-40.507  gate(thr=3.000, sc=0.150)
+ep  150  loss=+137.215  CVaR_train=-120.944  CVaR_val=-33.659  gate(thr=3.000, sc=0.150)
+ep  200  loss=+126.212  CVaR_train=-113.563  CVaR_val=-36.786  gate(thr=3.000, sc=0.150)
+ep  250  loss=+109.120  CVaR_train=-99.309  CVaR_val=-37.787  gate(thr=3.000, sc=0.150)
+ep  300  loss=+111.882  CVaR_train=-104.177  CVaR_val=-31.941  gate(thr=3.000, sc=0.150)
+ep  350  loss=+149.062  CVaR_train=-139.326  CVaR_val=-31.567  gate(thr=3.000, sc=0.150)
+ep  400  loss=+170.431  CVaR_train=-160.758  CVaR_val=-38.771  gate(thr=3.000, sc=0.150)
+[seed=1] evaluating... (final gate: thr=3.000, sc=0.150)
+2008 GFC (in-train)              n= 89  BS= -13.54[-14.17,-11.03]  DH= -17.77[-19.19,-14.10]  Delta= -4.23[ -6.63, -1.12]
+2017 Calm (in-train)             n= 72  BS=  -3.92[ -5.47, -2.68]  DH=  -3.78[ -4.67, -2.61]  Delta= +0.14[ -0.41, +0.79]
+2018 Volmageddon (in-train)      n= 45  BS=  -4.35[ -4.39, -3.54]  DH=  -5.95[ -7.26, -3.63]  Delta= -1.60[ -2.87, +0.28]
+2020 COVID (in-train)            n= 55  BS= -13.81[-14.00, -9.63]  DH= -14.98[-15.33, -6.76]  Delta= -1.16[ -4.34, +2.62]
+2022 Rate shock (OOT)            n= 45  BS=  -7.55[ -8.08, -5.46]  DH=  -9.26[ -9.46, -7.98]  Delta= -1.71[ -3.69, -0.38]
+2023 SVB / banking (OOT)         n= 45  BS=  -6.21[ -7.96, -3.83]  DH=  -5.93[ -7.36, -3.83]  Delta= +0.28[ -0.52, +0.60]
+2024 Full year (OOT)             n= 46  BS=  -5.44[ -5.65, -4.09]  DH=  -4.22[ -4.68, -3.25]  Delta= +1.22[ +0.33, +1.90]
+
+[seed=2  gate thr_init=3.0 sc_init=0.15 frozen=True] training...
+ep    1  loss=+172.649  CVaR_train=-154.223  CVaR_val=-53.133  gate(thr=3.000, sc=0.150)
+ep   50  loss=+178.849  CVaR_train=-159.166  CVaR_val=-49.436  gate(thr=3.000, sc=0.150)
+ep  100  loss=+160.540  CVaR_train=-142.785  CVaR_val=-43.751  gate(thr=3.000, sc=0.150)
+ep  150  loss=+147.480  CVaR_train=-130.159  CVaR_val=-32.966  gate(thr=3.000, sc=0.150)
+ep  200  loss=+134.544  CVaR_train=-119.030  CVaR_val=-31.745  gate(thr=3.000, sc=0.150)
+ep  250  loss=+137.213  CVaR_train=-123.099  CVaR_val=-29.019  gate(thr=3.000, sc=0.150)
+ep  300  loss=+114.361  CVaR_train=-104.564  CVaR_val=-33.351  gate(thr=3.000, sc=0.150)
+ep  350  loss=+131.187  CVaR_train=-122.674  CVaR_val=-34.605  gate(thr=3.000, sc=0.150)
+ep  400  loss=+130.980  CVaR_train=-124.575  CVaR_val=-37.061  gate(thr=3.000, sc=0.150)
+[seed=2] evaluating... (final gate: thr=3.000, sc=0.150)
+2008 GFC (in-train)              n= 89  BS= -13.54[-14.17,-11.03]  DH= -15.59[-17.39,-10.58]  Delta= -2.05[ -4.96, +2.08]
+2017 Calm (in-train)             n= 72  BS=  -3.92[ -5.47, -2.68]  DH=  -4.46[ -4.85, -3.26]  Delta= -0.54[ -1.59, +0.62]
+2018 Volmageddon (in-train)      n= 45  BS=  -4.35[ -4.39, -3.54]  DH=  -4.33[ -4.46, -3.63]  Delta= +0.02[ -0.79, +0.69]
+2020 COVID (in-train)            n= 55  BS= -13.81[-14.00, -9.63]  DH= -15.57[-15.76, -5.75]  Delta= -1.76[ -1.76, +4.42]
+2022 Rate shock (OOT)            n= 45  BS=  -7.55[ -8.08, -5.46]  DH=  -8.26[ -8.56, -7.17]  Delta= -0.71[ -2.37, +0.59]
+2023 SVB / banking (OOT)         n= 45  BS=  -6.21[ -7.96, -3.83]  DH=  -6.83[ -7.91, -3.86]  Delta= -0.62[ -1.68, +0.53]
+2024 Full year (OOT)             n= 46  BS=  -5.44[ -5.65, -4.09]  DH=  -4.42[ -4.91, -3.84]  Delta= +1.02[ +0.10, +1.80]
+
+Wrote results/vix_gated_calm_n3_frozen_metrics.txt
+
+========================================================================
+Aggregated across 3 seeds:
+Window                            mean Delta     std      min      max
+2008 GFC (in-train)                 -2.731   1.058   -4.226   -1.921
+2017 Calm (in-train)                -0.305   0.315   -0.538   +0.141
+2018 Volmageddon (in-train)         -0.503   0.777   -1.601   +0.075
+2020 COVID (in-train)               -1.375   0.271   -1.758   -1.162
+2022 Rate shock (OOT)               -1.008   0.498   -1.710   -0.603
+2023 SVB / banking (OOT)            -0.218   0.375   -0.623   +0.282
+2024 Full year (OOT)                +1.116   0.083   +1.020   +1.223
+
+Learned gate parameters per seed:
+  seed 0: threshold=+3.0000  scale=+0.1500
+  seed 1: threshold=+3.0000  scale=+0.1500
+  seed 2: threshold=+3.0000  scale=+0.1500
+
+Decision-rule check:
+  2017 calm:  mean Delta=-0.305  std=0.315  (plain-Adam: +0.48 +/- 0.14)
+  2024 OOT:   mean Delta=+1.116  std=0.083  (plain-Adam: +1.16 +/- 0.06)
+    -> calm sanity passes? mean-OK=True  std-OK=True
+
+>>> SANITY PASS: gate preserves calm wins.

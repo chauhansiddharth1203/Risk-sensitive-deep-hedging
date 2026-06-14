@@ -1,0 +1,34 @@
+/Users/s933746/Deep Hedging/Deep-Hedging-Cvar-Heston/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Train weekly obs: 835, Test: 209
+Action scales: stock ±2.0, VIX ±0.3
+lr=0.0001  N=512  epochs=800
+ep    1  loss=+197.609  CVaR_train=-175.287  mean=-44.643  CVaR_val=-49.537
+ep   50  loss=+164.141  CVaR_train=-145.512  mean=-37.258  CVaR_val=-49.360
+ep  100  loss=+142.892  CVaR_train=-125.535  mean=-34.714  CVaR_val=-35.508
+ep  150  loss=+104.133  CVaR_train=-90.820  mean=-26.626  CVaR_val=-38.153
+ep  200  loss=+117.302  CVaR_train=-104.173  mean=-26.258  CVaR_val=-33.786
+ep  250  loss=+102.511  CVaR_train=-91.704  mean=-21.614  CVaR_val=-30.875
+ep  300  loss=+100.661  CVaR_train=-92.107  mean=-17.107  CVaR_val=-35.629
+ep  350  loss=+107.298  CVaR_train=-97.300  mean=-19.997  CVaR_val=-32.121
+ep  400  loss=+103.159  CVaR_train=-95.084  mean=-16.150  CVaR_val=-37.640
+ep  450  loss=+99.010  CVaR_train=-91.252  mean=-15.516  CVaR_val=-34.445
+ep  500  loss=+117.515  CVaR_train=-107.763  mean=-19.503  CVaR_val=-36.878
+ep  550  loss=+102.676  CVaR_train=-97.063  mean=-11.226  CVaR_val=-34.359
+ep  600  loss=+124.465  CVaR_train=-116.432  mean=-16.066  CVaR_val=-33.926
+ep  650  loss=+93.301  CVaR_train=-89.680  mean=-7.242  CVaR_val=-35.100
+ep  700  loss=+99.835  CVaR_train=-93.781  mean=-12.109  CVaR_val=-39.752
+ep  750  loss=+146.123  CVaR_train=-137.751  mean=-16.743  CVaR_val=-38.251
+ep  800  loss=+157.032  CVaR_train=-148.694  mean=-16.676  CVaR_val=-42.073
+Saved → results/vix_futures_v2.pth
+
+=== Evaluation ===
+2008 GFC (in-train)              n= 89  BS= -13.54[-14.17,-11.03]  DH= -15.81[-17.34,-12.41]  Δ= -2.26[ -4.80, +0.55]
+2017 Calm (in-train)             n= 72  BS=  -3.92[ -5.47, -2.68]  DH=  -4.57[ -4.82, -3.38]  Δ= -0.65[ -1.75, +0.64]
+2018 Volmageddon (in-train)      n= 45  BS=  -4.35[ -4.39, -3.54]  DH=  -5.06[ -5.34, -3.76]  Δ= -0.70[ -1.58, +0.55]
+2020 COVID (in-train)            n= 55  BS= -13.81[-14.00, -9.63]  DH= -17.53[-19.33,-10.82]  Δ= -3.72[ -8.88, -0.03]
+2022 Rate shock (OOT)            n= 45  BS=  -7.55[ -8.08, -5.46]  DH=  -8.49[ -8.98, -7.07]  Δ= -0.94[ -1.97, +0.08]
+2023 SVB / banking (OOT)         n= 45  BS=  -6.21[ -7.96, -3.83]  DH=  -7.04[ -7.98, -4.27]  Δ= -0.83[ -2.03, +0.17]
+2024 Full year (OOT)             n= 46  BS=  -5.44[ -5.65, -4.09]  DH=  -4.78[ -5.26, -4.02]  Δ= +0.66[ -0.26, +1.51]
+
+Artifacts in results/vix_futures_v2_*.{txt,png}

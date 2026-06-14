@@ -1,0 +1,20 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Build / artifacts
+*.pt
+*.pth
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# MP4s are not tracked in git; videos are hosted on Drive (see Videos/README.md).
+Videos/*.mp4
+*.mp4
+
+# Local packaging artifacts (zips made for Drive uploads, etc.)
+*.zip

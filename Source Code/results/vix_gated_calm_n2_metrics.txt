@@ -1,0 +1,36 @@
+Regime-gated multi-seed — mode=calm
+========================================================================
+seeds=2  epochs=20  N=512  lr=0.0001  lam=0.5
+gate init: thr=1.5  scale=0.2  frozen=False
+
+Window                              mean Δ     std      min      max
+2008 GFC (in-train)                 -5.308   0.016   -5.325   -5.292
+2017 Calm (in-train)                -2.756   0.003   -2.759   -2.752
+2018 Volmageddon (in-train)         -0.183   0.001   -0.184   -0.183
+2020 COVID (in-train)               -5.539   0.005   -5.545   -5.534
+2022 Rate shock (OOT)               -4.906   0.003   -4.909   -4.903
+2023 SVB / banking (OOT)            -4.168   0.010   -4.178   -4.159
+2024 Full year (OOT)                -2.165   0.007   -2.171   -2.158
+
+Final gate parameters per seed:
+  seed 0: threshold=+1.4990  scale=+0.1982
+  seed 1: threshold=+1.4992  scale=+0.1984
+
+seed 0:
+  2008 GFC (in-train)               Δ= -5.292
+  2017 Calm (in-train)              Δ= -2.752
+  2018 Volmageddon (in-train)       Δ= -0.183
+  2020 COVID (in-train)             Δ= -5.534
+  2022 Rate shock (OOT)             Δ= -4.903
+  2023 SVB / banking (OOT)          Δ= -4.159
+  2024 Full year (OOT)              Δ= -2.158
+
+seed 1:
+  2008 GFC (in-train)               Δ= -5.325
+  2017 Calm (in-train)              Δ= -2.759
+  2018 Volmageddon (in-train)       Δ= -0.184
+  2020 COVID (in-train)             Δ= -5.545
+  2022 Rate shock (OOT)             Δ= -4.909
+  2023 SVB / banking (OOT)          Δ= -4.178
+  2024 Full year (OOT)              Δ= -2.171
+

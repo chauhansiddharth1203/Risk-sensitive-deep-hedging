@@ -1,0 +1,27 @@
+Week 8 — Sim-to-real training and evaluation
+============================================================
+Simulator: Bates + SPX-calibrated + domain randomisation
+Loss: CVaR + 1.0*|mean|
+Epochs: 200, batch: 256
+
+2008 GFC  (n=86 windows)
+  Unhedged                     mean= -2.400  std= 4.719  CVaR95=-18.794  [-24.418, -11.503]
+  BS                           mean= -3.770  std= 2.789  CVaR95=-12.123  [-15.379, -8.262]
+  DeepHedge (Heston DR, W5)    mean= -0.938  std= 9.697  CVaR95=-21.380  [-25.170, -14.752]
+  DeepHedge (new)              mean= -1.148  std=10.498  CVaR95=-26.825  [-33.287, -16.954]
+  Δ(new-BS) CVaR = -14.701  [-23.721, -4.405]
+
+2020 COVID  (n=53 windows)
+  Unhedged                     mean= -5.263  std= 4.848  CVaR95=-21.399  [-23.938, -11.754]
+  BS                           mean= -2.975  std= 2.023  CVaR95= -8.592  [-9.501, -6.587]
+  DeepHedge (Heston DR, W5)    mean= +2.849  std= 8.671  CVaR95= -9.432  [-10.027, -7.840]
+  DeepHedge (new)              mean= -1.183  std= 7.631  CVaR95=-19.735  [-23.146, -8.797]
+  Δ(new-BS) CVaR = -11.143  [-15.921, -0.359]
+
+2017 Calm  (n=70 windows)
+  Unhedged                     mean= -2.211  std= 1.660  CVaR95= -5.995  [-7.047, -4.571]
+  BS                           mean= -1.146  std= 0.566  CVaR95= -2.618  [-2.973, -2.024]
+  DeepHedge (Heston DR, W5)    mean= +1.044  std= 3.471  CVaR95= -6.944  [-8.207, -4.206]
+  DeepHedge (new)              mean= -0.984  std= 1.277  CVaR95= -3.686  [-4.237, -2.821]
+  Δ(new-BS) CVaR = -1.068  [-1.472, -0.475]
+

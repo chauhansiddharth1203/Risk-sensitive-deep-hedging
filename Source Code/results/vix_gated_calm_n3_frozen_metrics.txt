@@ -1,0 +1,46 @@
+Regime-gated multi-seed -- mode=calm
+========================================================================
+seeds=3  epochs=400  N=512  lr=0.0001  lam=0.5
+gate init: thr=3.0  scale=0.6  frozen=True
+
+Window                            mean Delta     std      min      max
+2008 GFC (in-train)                 -2.357   0.405   -2.924   -2.002
+2017 Calm (in-train)                -0.617   0.273   -0.830   -0.232
+2018 Volmageddon (in-train)         -0.406   0.380   -0.940   -0.091
+2020 COVID (in-train)               -1.451   0.460   -1.993   -0.869
+2022 Rate shock (OOT)               -0.897   0.241   -1.228   -0.659
+2023 SVB / banking (OOT)            -0.469   0.309   -0.809   -0.062
+2024 Full year (OOT)                +0.965   0.145   +0.845   +1.168
+
+Final gate parameters per seed:
+  seed 0: threshold=+3.0000  scale=+0.6000
+  seed 1: threshold=+3.0000  scale=+0.6000
+  seed 2: threshold=+3.0000  scale=+0.6000
+
+seed 0:
+  2008 GFC (in-train)               Delta= -2.002
+  2017 Calm (in-train)              Delta= -0.830
+  2018 Volmageddon (in-train)       Delta= -0.091
+  2020 COVID (in-train)             Delta= -1.492
+  2022 Rate shock (OOT)             Delta= -0.659
+  2023 SVB / banking (OOT)          Delta= -0.535
+  2024 Full year (OOT)              Delta= +0.882
+
+seed 1:
+  2008 GFC (in-train)               Delta= -2.924
+  2017 Calm (in-train)              Delta= -0.232
+  2018 Volmageddon (in-train)       Delta= -0.940
+  2020 COVID (in-train)             Delta= -0.869
+  2022 Rate shock (OOT)             Delta= -1.228
+  2023 SVB / banking (OOT)          Delta= -0.062
+  2024 Full year (OOT)              Delta= +1.168
+
+seed 2:
+  2008 GFC (in-train)               Delta= -2.144
+  2017 Calm (in-train)              Delta= -0.790
+  2018 Volmageddon (in-train)       Delta= -0.187
+  2020 COVID (in-train)             Delta= -1.993
+  2022 Rate shock (OOT)             Delta= -0.803
+  2023 SVB / banking (OOT)          Delta= -0.809
+  2024 Full year (OOT)              Delta= +0.845
+

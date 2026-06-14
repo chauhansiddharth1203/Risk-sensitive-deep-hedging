@@ -1,0 +1,22 @@
+Week 7 — Historical stress test on SPX
+============================================================
+Policy: results/varswap_cvar_robust.pth
+
+2008 GFC  (n=86 windows)
+  Unhedged    mean= -2.400  std= 4.719  CVaR95=-18.794  [-24.418, -11.503]
+  BS          mean= -3.770  std= 2.789  CVaR95=-12.123  [-15.379, -8.262]
+  DeepHedge   mean= -0.937  std= 9.697  CVaR95=-21.380  [-25.170, -14.752]
+  Δ(Deep-BS) CVaR = -9.256  [-15.391, -2.639]
+
+2020 COVID  (n=53 windows)
+  Unhedged    mean= -5.263  std= 4.848  CVaR95=-21.399  [-23.938, -11.754]
+  BS          mean= -2.975  std= 2.023  CVaR95= -8.592  [-9.501, -6.587]
+  DeepHedge   mean= +2.849  std= 8.671  CVaR95= -9.432  [-10.027, -7.840]
+  Δ(Deep-BS) CVaR = -0.840  [-3.074, +1.313]
+
+2017 Calm  (n=70 windows)
+  Unhedged    mean= -2.211  std= 1.660  CVaR95= -5.995  [-7.047, -4.571]
+  BS          mean= -1.146  std= 0.566  CVaR95= -2.618  [-2.973, -2.024]
+  DeepHedge   mean= +1.044  std= 3.471  CVaR95= -6.944  [-8.207, -4.206]
+  Δ(Deep-BS) CVaR = -4.326  [-5.920, -1.608]
+

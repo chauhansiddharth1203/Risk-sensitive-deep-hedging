@@ -1,0 +1,22 @@
+Week 8 follow-up: early-stopping sim-to-real
+============================================================
+Best checkpoint: epoch 200/300
+
+2008 GFC  (n=86 windows)
+  Unhedged   mean= -2.400  std= 4.719  CVaR95=-18.794  [-24.418, -11.503]
+  BS         mean= -3.770  std= 2.789  CVaR95=-12.123  [-15.379, -8.262]
+  DeepHedge  mean= -1.692  std= 9.233  CVaR95=-25.996  [-31.189, -16.933]
+  Δ(Deep-BS) CVaR = -13.873  [-21.550, -4.822]
+
+2020 COVID  (n=53 windows)
+  Unhedged   mean= -5.263  std= 4.848  CVaR95=-21.399  [-23.938, -11.754]
+  BS         mean= -2.975  std= 2.023  CVaR95= -8.592  [-9.501, -6.587]
+  DeepHedge  mean= -2.164  std= 7.115  CVaR95=-21.320  [-25.308, -14.437]
+  Δ(Deep-BS) CVaR = -12.727  [-18.082, -5.086]
+
+2017 Calm  (n=70 windows)
+  Unhedged   mean= -2.211  std= 1.660  CVaR95= -5.995  [-7.047, -4.571]
+  BS         mean= -1.146  std= 0.566  CVaR95= -2.618  [-2.973, -2.024]
+  DeepHedge  mean= -0.879  std= 1.108  CVaR95= -3.378  [-3.789, -2.452]
+  Δ(Deep-BS) CVaR = -0.761  [-1.153, -0.148]
+

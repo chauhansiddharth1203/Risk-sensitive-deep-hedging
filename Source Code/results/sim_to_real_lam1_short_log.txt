@@ -1,0 +1,53 @@
+Device: cpu
+Training Bates+SPX+DR hedger: epochs=200, batch=256, λ=1.0
+  ep    1/200  α=0.800  CVaR=-23.34  mean=-6.52
+  ep   10/200  α=0.807  CVaR=-26.24  mean=-8.02
+  ep   20/200  α=0.814  CVaR=-21.72  mean=-7.71
+  ep   30/200  α=0.822  CVaR=-18.20  mean=-7.03
+  ep   40/200  α=0.829  CVaR=-15.50  mean=-5.06
+  ep   50/200  α=0.837  CVaR=-17.67  mean=-7.88
+  ep   60/200  α=0.844  CVaR=-17.25  mean=-4.82
+  ep   70/200  α=0.852  CVaR=-12.64  mean=-1.88
+  ep   80/200  α=0.860  CVaR=-10.56  mean=-2.25
+  ep   90/200  α=0.867  CVaR=-16.83  mean=-5.76
+  ep  100/200  α=0.875  CVaR=-11.08  mean=+0.92
+  ep  110/200  α=0.882  CVaR=-14.16  mean=+0.11
+  ep  120/200  α=0.890  CVaR=-15.32  mean=-1.97
+  ep  130/200  α=0.897  CVaR=-17.47  mean=-2.49
+  ep  140/200  α=0.905  CVaR=-15.94  mean=-0.83
+  ep  150/200  α=0.912  CVaR=-9.28  mean=+5.73
+  ep  160/200  α=0.920  CVaR=-14.23  mean=-0.33
+  ep  170/200  α=0.927  CVaR=-15.58  mean=-0.89
+  ep  180/200  α=0.935  CVaR=-16.03  mean=-4.48
+  ep  190/200  α=0.942  CVaR=-14.53  mean=-2.52
+  ep  200/200  α=0.950  CVaR=-18.32  mean=-2.65
+
+=== 2008 GFC  (2007-09-01 → 2009-06-30) ===
+  86 rolling 30-day windows (step=5)
+  Unhedged                     mean=  -2.40  std= 4.72  CVaR95= -18.79  [-24.42, -11.50]
+  BS                           mean=  -3.77  std= 2.79  CVaR95= -12.12  [-15.38,  -8.26]
+  DeepHedge (Heston DR, W5)    mean=  -0.94  std= 9.70  CVaR95= -21.38  [-25.17, -14.75]
+  DeepHedge (new)              mean=  -1.15  std=10.50  CVaR95= -26.82  [-33.29, -16.95]
+  Δ(new-BS) CVaR = -14.70  [-23.72, -4.41]
+
+=== 2020 COVID  (2019-11-01 → 2020-12-31) ===
+  53 rolling 30-day windows (step=5)
+  Unhedged                     mean=  -5.26  std= 4.85  CVaR95= -21.40  [-23.94, -11.75]
+  BS                           mean=  -2.98  std= 2.02  CVaR95=  -8.59  [ -9.50,  -6.59]
+  DeepHedge (Heston DR, W5)    mean=  +2.85  std= 8.67  CVaR95=  -9.43  [-10.03,  -7.84]
+  DeepHedge (new)              mean=  -1.18  std= 7.63  CVaR95= -19.74  [-23.15,  -8.80]
+  Δ(new-BS) CVaR = -11.14  [-15.92, -0.36]
+
+=== 2017 Calm  (2016-07-01 → 2017-12-31) ===
+  70 rolling 30-day windows (step=5)
+  Unhedged                     mean=  -2.21  std= 1.66  CVaR95=  -5.99  [ -7.05,  -4.57]
+  BS                           mean=  -1.15  std= 0.57  CVaR95=  -2.62  [ -2.97,  -2.02]
+  DeepHedge (Heston DR, W5)    mean=  +1.04  std= 3.47  CVaR95=  -6.94  [ -8.21,  -4.21]
+  DeepHedge (new)              mean=  -0.98  std= 1.28  CVaR95=  -3.69  [ -4.24,  -2.82]
+  Δ(new-BS) CVaR = -1.07  [-1.47, -0.48]
+
+Saved:
+  results/varswap_cvar_spx_bates.pth
+  results/sim_to_real_learning_curve.png
+  results/sim_to_real_historical.png
+  results/sim_to_real_metrics.txt

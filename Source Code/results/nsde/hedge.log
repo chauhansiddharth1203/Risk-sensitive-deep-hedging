@@ -1,0 +1,135 @@
+========================================================================
+NEURAL SDE HEDGER TRAINING
+Generator: results/nsde/nsde_generator.pth
+seeds=5  epochs=400  N=512
+Gate: theta=3.0  width=0.3  (from Step 1)
+========================================================================
+
+PRE-REGISTERED DECISION RULE:
+  NSDE beats bootstrap if:
+    COVID Delta(NSDE) > COVID Delta(bootstrap) + 0.5 CVaR
+    AND 2024 OOT Delta(NSDE) > 0
+
+  Step 1 bootstrap COVID: mean Delta = -1.177 +/- 0.410
+  NSDE needs COVID Delta > -0.677 to beat bootstrap
+========================================================================
+
+[seed 0] Training on Neural SDE paths...
+ep    1  loss=+4.625  CVaR_train=-4.143  CVaR_val=-51.151  gate(thr=3.000, sc=0.300)
+ep   50  loss=+4.305  CVaR_train=-3.776  CVaR_val=-46.219  gate(thr=3.000, sc=0.300)
+ep  100  loss=+4.119  CVaR_train=-3.521  CVaR_val=-44.391  gate(thr=3.000, sc=0.300)
+ep  150  loss=+4.190  CVaR_train=-3.516  CVaR_val=-42.135  gate(thr=3.000, sc=0.300)
+ep  200  loss=+4.623  CVaR_train=-3.890  CVaR_val=-39.849  gate(thr=3.000, sc=0.300)
+ep  250  loss=+4.945  CVaR_train=-4.185  CVaR_val=-41.807  gate(thr=3.000, sc=0.300)
+ep  300  loss=+4.962  CVaR_train=-4.167  CVaR_val=-40.548  gate(thr=3.000, sc=0.300)
+ep  350  loss=+5.612  CVaR_train=-4.727  CVaR_val=-40.996  gate(thr=3.000, sc=0.300)
+ep  400  loss=+5.610  CVaR_train=-4.707  CVaR_val=-33.669  gate(thr=3.000, sc=0.300)
+[seed 0] Evaluating on real SPY windows...
+  2008 GFC                         Delta=-1.096 [-5.149,+3.823]
+  2017 Calm                        Delta=-1.327 [-2.263,-0.444]
+  2018 Volmageddon                 Delta=+0.342 [-0.462,+1.235]
+  2020 COVID                       Delta=-2.848 [-4.720,+1.614]
+  2022 Rate shock                  Delta=-2.983 [-3.051,-0.817]
+  2023 SVB                         Delta=-1.519 [-1.857,-1.344]
+  2024 Full year                   Delta=-0.469 [-0.770,-0.371]
+
+[seed 1] Training on Neural SDE paths...
+ep    1  loss=+4.046  CVaR_train=-3.636  CVaR_val=-51.353  gate(thr=3.000, sc=0.300)
+ep   50  loss=+4.911  CVaR_train=-4.322  CVaR_val=-48.140  gate(thr=3.000, sc=0.300)
+ep  100  loss=+4.209  CVaR_train=-3.601  CVaR_val=-42.398  gate(thr=3.000, sc=0.300)
+ep  150  loss=+4.564  CVaR_train=-3.870  CVaR_val=-44.002  gate(thr=3.000, sc=0.300)
+ep  200  loss=+4.502  CVaR_train=-3.777  CVaR_val=-46.272  gate(thr=3.000, sc=0.300)
+ep  250  loss=+5.055  CVaR_train=-4.277  CVaR_val=-36.268  gate(thr=3.000, sc=0.300)
+ep  300  loss=+4.936  CVaR_train=-4.154  CVaR_val=-38.843  gate(thr=3.000, sc=0.300)
+ep  350  loss=+5.434  CVaR_train=-4.547  CVaR_val=-38.970  gate(thr=3.000, sc=0.300)
+ep  400  loss=+5.113  CVaR_train=-4.287  CVaR_val=-38.193  gate(thr=3.000, sc=0.300)
+[seed 1] Evaluating on real SPY windows...
+  2008 GFC                         Delta=-1.031 [-4.978,+3.929]
+  2017 Calm                        Delta=-1.306 [-2.228,-0.430]
+  2018 Volmageddon                 Delta=+0.337 [-0.456,+1.260]
+  2020 COVID                       Delta=-2.773 [-4.684,+1.624]
+  2022 Rate shock                  Delta=-2.980 [-3.079,-0.804]
+  2023 SVB                         Delta=-1.470 [-1.826,-1.349]
+  2024 Full year                   Delta=-0.443 [-0.757,-0.363]
+
+[seed 2] Training on Neural SDE paths...
+ep    1  loss=+5.033  CVaR_train=-4.514  CVaR_val=-50.583  gate(thr=3.000, sc=0.300)
+ep   50  loss=+4.245  CVaR_train=-3.744  CVaR_val=-50.400  gate(thr=3.000, sc=0.300)
+ep  100  loss=+5.107  CVaR_train=-4.470  CVaR_val=-46.959  gate(thr=3.000, sc=0.300)
+ep  150  loss=+5.207  CVaR_train=-4.498  CVaR_val=-45.112  gate(thr=3.000, sc=0.300)
+ep  200  loss=+4.546  CVaR_train=-3.863  CVaR_val=-41.071  gate(thr=3.000, sc=0.300)
+ep  250  loss=+4.674  CVaR_train=-3.902  CVaR_val=-37.267  gate(thr=3.000, sc=0.300)
+ep  300  loss=+5.227  CVaR_train=-4.385  CVaR_val=-34.018  gate(thr=3.000, sc=0.300)
+ep  350  loss=+5.156  CVaR_train=-4.324  CVaR_val=-37.204  gate(thr=3.000, sc=0.300)
+ep  400  loss=+5.657  CVaR_train=-4.760  CVaR_val=-38.247  gate(thr=3.000, sc=0.300)
+[seed 2] Evaluating on real SPY windows...
+  2008 GFC                         Delta=-1.265 [-5.405,+3.715]
+  2017 Calm                        Delta=-1.422 [-2.391,-0.470]
+  2018 Volmageddon                 Delta=+0.298 [-0.510,+1.153]
+  2020 COVID                       Delta=-3.102 [-5.086,+1.388]
+  2022 Rate shock                  Delta=-3.057 [-3.203,-1.043]
+  2023 SVB                         Delta=-1.690 [-2.032,-1.460]
+  2024 Full year                   Delta=-0.549 [-0.887,-0.400]
+
+[seed 3] Training on Neural SDE paths...
+ep    1  loss=+4.098  CVaR_train=-3.696  CVaR_val=-43.929  gate(thr=3.000, sc=0.300)
+ep   50  loss=+4.141  CVaR_train=-3.663  CVaR_val=-51.446  gate(thr=3.000, sc=0.300)
+ep  100  loss=+4.900  CVaR_train=-4.284  CVaR_val=-49.215  gate(thr=3.000, sc=0.300)
+ep  150  loss=+4.469  CVaR_train=-3.819  CVaR_val=-44.523  gate(thr=3.000, sc=0.300)
+ep  200  loss=+5.421  CVaR_train=-4.650  CVaR_val=-41.282  gate(thr=3.000, sc=0.300)
+ep  250  loss=+5.204  CVaR_train=-4.406  CVaR_val=-39.192  gate(thr=3.000, sc=0.300)
+ep  300  loss=+4.894  CVaR_train=-4.097  CVaR_val=-37.682  gate(thr=3.000, sc=0.300)
+ep  350  loss=+5.186  CVaR_train=-4.345  CVaR_val=-38.349  gate(thr=3.000, sc=0.300)
+ep  400  loss=+5.552  CVaR_train=-4.693  CVaR_val=-35.217  gate(thr=3.000, sc=0.300)
+[seed 3] Evaluating on real SPY windows...
+  2008 GFC                         Delta=-1.117 [-5.265,+3.856]
+  2017 Calm                        Delta=-1.353 [-2.268,-0.459]
+  2018 Volmageddon                 Delta=+0.322 [-0.463,+1.256]
+  2020 COVID                       Delta=-3.059 [-5.256,+1.666]
+  2022 Rate shock                  Delta=-2.972 [-3.042,-0.928]
+  2023 SVB                         Delta=-1.565 [-1.886,-1.392]
+  2024 Full year                   Delta=-0.493 [-0.800,-0.332]
+
+[seed 4] Training on Neural SDE paths...
+ep    1  loss=+4.726  CVaR_train=-4.252  CVaR_val=-51.006  gate(thr=3.000, sc=0.300)
+ep   50  loss=+4.216  CVaR_train=-3.683  CVaR_val=-46.354  gate(thr=3.000, sc=0.300)
+ep  100  loss=+4.096  CVaR_train=-3.498  CVaR_val=-46.089  gate(thr=3.000, sc=0.300)
+ep  150  loss=+4.391  CVaR_train=-3.728  CVaR_val=-44.912  gate(thr=3.000, sc=0.300)
+ep  200  loss=+4.839  CVaR_train=-4.110  CVaR_val=-44.345  gate(thr=3.000, sc=0.300)
+ep  250  loss=+4.973  CVaR_train=-4.172  CVaR_val=-40.855  gate(thr=3.000, sc=0.300)
+ep  300  loss=+5.131  CVaR_train=-4.355  CVaR_val=-37.700  gate(thr=3.000, sc=0.300)
+ep  350  loss=+5.193  CVaR_train=-4.343  CVaR_val=-38.282  gate(thr=3.000, sc=0.300)
+ep  400  loss=+5.643  CVaR_train=-4.760  CVaR_val=-37.861  gate(thr=3.000, sc=0.300)
+[seed 4] Evaluating on real SPY windows...
+  2008 GFC                         Delta=-1.123 [-5.153,+3.862]
+  2017 Calm                        Delta=-1.380 [-2.345,-0.466]
+  2018 Volmageddon                 Delta=+0.317 [-0.474,+1.246]
+  2020 COVID                       Delta=-2.904 [-5.005,+1.565]
+  2022 Rate shock                  Delta=-3.085 [-3.244,-0.934]
+  2023 SVB                         Delta=-1.525 [-1.838,-1.381]
+  2024 Full year                   Delta=-0.475 [-0.789,-0.322]
+
+========================================================================
+AGGREGATED RESULTS (Neural SDE training)
+========================================================================
+Window                            mean Delta     std               verdict
+------------------------------------------------------------------------
+2008 GFC                              -1.126   0.077       [OK] small loss
+2017 Calm                             -1.357   0.041       [OK] small loss
+2018 Volmageddon                      +0.323   0.015              [OK] win
+2020 COVID                            -2.937   0.125           [FAIL] loss
+2022 Rate shock                       -3.016   0.046           [FAIL] loss
+2023 SVB                              -1.554   0.075       [OK] small loss
+2024 Full year                        -0.486   0.036       [OK] small loss
+
+Decision rule check:
+  COVID Delta(NSDE)  = -2.937 +/- 0.125
+  COVID Delta(bootstrap) = -1.177
+  Rule 1 (NSDE COVID > bootstrap + 0.5): -2.937 > -0.677 -> FAIL
+  Rule 2 (2024 OOT > 0): -0.486 > 0 -> FAIL
+
+  [FAIL] Neural SDE does not outperform block bootstrap.
+  Hypothesis: regime gate is more important than simulator.
+
+Results written -> results/nsde/hedge_results.txt
+Figure written -> results/nsde/hedge_comparison.png

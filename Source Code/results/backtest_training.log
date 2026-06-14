@@ -1,0 +1,33 @@
+/Users/s933746/Deep Hedging/Deep-Hedging-Cvar-Heston/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+device=cpu  epochs=400  N=256  lam=0.5
+ep    1  loss=+9.504  CVaR_train=-8.150  mean_train=-2.708  CVaR_val(bootstrap)=-11.384
+ep   25  loss=+5.428  CVaR_train=-5.365  mean_train=-0.126  CVaR_val(bootstrap)=-8.432
+ep   50  loss=+4.663  CVaR_train=-4.553  mean_train=-0.222  CVaR_val(bootstrap)=-8.774
+ep   75  loss=+3.758  CVaR_train=-3.640  mean_train=+0.237  CVaR_val(bootstrap)=-8.086
+ep  100  loss=+4.621  CVaR_train=-4.573  mean_train=-0.097  CVaR_val(bootstrap)=-6.171
+ep  125  loss=+4.437  CVaR_train=-4.381  mean_train=-0.113  CVaR_val(bootstrap)=-6.822
+ep  150  loss=+4.365  CVaR_train=-4.225  mean_train=-0.278  CVaR_val(bootstrap)=-8.544
+ep  175  loss=+3.676  CVaR_train=-3.468  mean_train=+0.415  CVaR_val(bootstrap)=-6.219
+ep  200  loss=+4.020  CVaR_train=-3.990  mean_train=-0.060  CVaR_val(bootstrap)=-6.785
+ep  225  loss=+4.106  CVaR_train=-3.938  mean_train=-0.336  CVaR_val(bootstrap)=-6.880
+ep  250  loss=+4.776  CVaR_train=-4.674  mean_train=-0.205  CVaR_val(bootstrap)=-6.700
+ep  275  loss=+3.942  CVaR_train=-3.824  mean_train=+0.235  CVaR_val(bootstrap)=-6.191
+ep  300  loss=+4.304  CVaR_train=-4.257  mean_train=+0.094  CVaR_val(bootstrap)=-5.800
+ep  325  loss=+5.005  CVaR_train=-4.561  mean_train=+0.888  CVaR_val(bootstrap)=-6.129
+ep  350  loss=+5.161  CVaR_train=-4.929  mean_train=-0.464  CVaR_val(bootstrap)=-5.697
+ep  375  loss=+4.355  CVaR_train=-4.276  mean_train=+0.158  CVaR_val(bootstrap)=-6.509
+ep  400  loss=+5.556  CVaR_train=-5.545  mean_train=-0.021  CVaR_val(bootstrap)=-6.661
+Saved policy → results/backtest_trained.pth
+
+=== Evaluation on real SPY windows ===
+2008 GFC (in-train)        n= 86  BS CVaR= -12.12 [-15.38, -8.26]  Deep CVaR= -13.80 [-15.20,-11.54]  Δ= -1.67 [ -4.80, +2.46]
+2017 Calm (in-train)       n= 70  BS CVaR=  -2.62 [ -2.97, -2.02]  Deep CVaR=  -2.79 [ -3.40, -2.19]  Δ= -0.18 [ -0.43, -0.04]
+2018 Volmageddon           n= 44  BS CVaR=  -4.12 [ -4.26, -3.21]  Deep CVaR=  -5.39 [ -7.15, -2.75]  Δ= -1.27 [ -2.90, +0.73]
+2020 COVID (OOT)           n= 53  BS CVaR=  -8.59 [ -9.50, -6.59]  Deep CVaR= -15.06 [-15.71,-12.38]  Δ= -6.47 [ -8.48, -3.75]
+2022 Rate shock            n= 44  BS CVaR=  -5.62 [ -5.79, -5.08]  Deep CVaR=  -7.17 [ -7.35, -6.19]  Δ= -1.55 [ -2.03, -0.57]
+
+Artifacts:
+  results/backtest_training_metrics.txt
+  results/backtest_training_learning.png
+  results/backtest_training_cvar.png

@@ -1,0 +1,24 @@
+
+=== Ablation 1: state features ===
+  S             mean=-7.684  std=3.423  CVaR95=-15.225
+  S+VS          mean=+2.573  std=6.877  CVaR95=-11.142
+  S+VS+t        mean=+1.584  std=6.527  CVaR95=-11.528
+  S+VS+t+prev   mean=+5.839  std=9.664  CVaR95=-11.625
+
+=== Ablation 2: network depth (S+VS+t+prev) ===
+  depth=1     mean=+2.736  std=7.394  CVaR95=-11.288
+  depth=2     mean=+5.839  std=9.664  CVaR95=-11.625
+  depth=3     mean=+4.333  std=8.524  CVaR95=-12.014
+  depth=4     mean=+6.241  std=10.096  CVaR95=-11.952
+
+=== Ablation 3: rebalancing frequency T ===
+  T=10      mean=-2.696  std=6.340  CVaR95=-15.296
+  T=20      mean=+0.284  std=6.748  CVaR95=-12.812
+  T=30      mean=+5.937  std=9.374  CVaR95=-11.482
+  T=60      mean=+9.331  std=10.285  CVaR95=-9.614
+
+Saved:
+  results/ablation_design_state.png
+  results/ablation_design_depth.png
+  results/ablation_design_freq.png
+  results/ablation_design_table.txt

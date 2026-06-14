@@ -1,0 +1,45 @@
+Device: cpu
+Training spread-call hedger: epochs=800, batch=256, rho_12=0.5
+  epoch    1/800  α=0.800  CVaR=-23.732
+  epoch   40/800  α=0.807  CVaR=-15.635
+  epoch   80/800  α=0.815  CVaR=-6.666
+  epoch  120/800  α=0.822  CVaR=+2.794
+  epoch  160/800  α=0.830  CVaR=+7.494
+  epoch  200/800  α=0.837  CVaR=+8.793
+  epoch  240/800  α=0.845  CVaR=+11.735
+  epoch  280/800  α=0.852  CVaR=+9.872
+  epoch  320/800  α=0.860  CVaR=+7.359
+  epoch  360/800  α=0.867  CVaR=+14.404
+  epoch  400/800  α=0.875  CVaR=+0.965
+  epoch  440/800  α=0.882  CVaR=+13.951
+  epoch  480/800  α=0.890  CVaR=-2.368
+  epoch  520/800  α=0.897  CVaR=+2.967
+  epoch  560/800  α=0.905  CVaR=+2.010
+  epoch  600/800  α=0.912  CVaR=+5.509
+  epoch  640/800  α=0.920  CVaR=+0.249
+  epoch  680/800  α=0.927  CVaR=-9.150
+  epoch  720/800  α=0.935  CVaR=-11.833
+  epoch  760/800  α=0.942  CVaR=-15.931
+  epoch  800/800  α=0.950  CVaR=-1.325
+
+=== Spread-call hedging at rho_12=0.5 ===
+  Margrabe baseline  : mean=-7.824  std=3.163  CVaR95=-14.732
+  Deep hedger (S+VS) : mean=+51.861  std=30.247  CVaR95=-7.411
+  Δ CVaR (higher=better): +7.321
+
+=== Correlation sweep (policy trained at rho=0.5) ===
+  rho=-0.50   Margrabe CVaR= -24.25   DeepHedge CVaR= -11.22   Δ=+13.03
+  rho=+0.00   Margrabe CVaR= -20.14   DeepHedge CVaR=  -9.02   Δ=+11.11
+  rho=+0.30   Margrabe CVaR= -17.34   DeepHedge CVaR=  -6.29   Δ=+11.05
+  rho=+0.50   Margrabe CVaR= -14.86   DeepHedge CVaR=  -5.46   Δ=+9.40
+  rho=+0.80   Margrabe CVaR= -10.17   DeepHedge CVaR=  -2.48   Δ=+7.69
+
+Saved:
+  results/multi_asset_learning_curve.png
+  results/multi_asset_pnl.png
+  results/multi_asset_cvar_by_corr.png
+  results/multi_asset_hedge_composition.png
+  results/multi_asset_policy.pth
+  results/multi_asset_metrics.txt
+
+Done.

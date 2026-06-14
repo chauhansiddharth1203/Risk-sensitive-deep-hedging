@@ -1,0 +1,31 @@
+MoM multi-seed — mode=calm
+========================================================================
+seeds=2  epochs=20  N=512  lr=0.0001  lam=0.5  k=9
+
+Window                              mean Δ     std      min      max
+2008 GFC (in-train)                 -5.219   0.008   -5.227   -5.212
+2017 Calm (in-train)                -2.651   0.003   -2.653   -2.648
+2018 Volmageddon (in-train)         -0.135   0.003   -0.138   -0.132
+2020 COVID (in-train)               -5.398   0.002   -5.400   -5.396
+2022 Rate shock (OOT)               -4.803   0.004   -4.807   -4.798
+2023 SVB / banking (OOT)            -4.056   0.004   -4.060   -4.052
+2024 Full year (OOT)                -2.194   0.007   -2.201   -2.187
+
+seed 0:
+  2008 GFC (in-train)               Δ= -5.212
+  2017 Calm (in-train)              Δ= -2.653
+  2018 Volmageddon (in-train)       Δ= -0.138
+  2020 COVID (in-train)             Δ= -5.400
+  2022 Rate shock (OOT)             Δ= -4.807
+  2023 SVB / banking (OOT)          Δ= -4.052
+  2024 Full year (OOT)              Δ= -2.187
+
+seed 1:
+  2008 GFC (in-train)               Δ= -5.227
+  2017 Calm (in-train)              Δ= -2.648
+  2018 Volmageddon (in-train)       Δ= -0.132
+  2020 COVID (in-train)             Δ= -5.396
+  2022 Rate shock (OOT)             Δ= -4.798
+  2023 SVB / banking (OOT)          Δ= -4.060
+  2024 Full year (OOT)              Δ= -2.201
+

@@ -1,0 +1,54 @@
+Train obs: 835 weekly  SPY range [50.4, 346.3]  VIX range [9.1, 79.1]
+Max VIX in training pool: 79.1  (COVID peak should be ~80)
+
+========================================================================
+TRAINING NEURAL SDE (QUANT-GAN)
+epochs=3000  batch=256  lr_g=0.0001  lr_d=0.0001  n_critic=5  lambda_gp=10.0
+========================================================================
+Real sequences: 828  shape torch.Size([828, 6, 2])  mean=0.000  std=1.000
+ep     1  W=+0.0007  L_G=-0.0931  spy_ret std real=0.0256 fake=0.0002  vix_chg std real=0.1529 fake=0.0016
+ep   300  W=+2.3001  L_G=+1.7747  spy_ret std real=0.0252 fake=0.0002  vix_chg std real=0.1512 fake=0.0014
+ep   600  W=+2.8400  L_G=+1.8183  spy_ret std real=0.0259 fake=0.0008  vix_chg std real=0.1507 fake=0.0118
+ep   900  W=+2.7032  L_G=+0.7215  spy_ret std real=0.0258 fake=0.0166  vix_chg std real=0.1511 fake=0.1233
+ep  1200  W=+2.4595  L_G=+0.4820  spy_ret std real=0.0268 fake=0.0183  vix_chg std real=0.1534 fake=0.0476
+ep  1500  W=+1.4200  L_G=-1.3997  spy_ret std real=0.0253 fake=0.0229  vix_chg std real=0.1471 fake=0.1239
+ep  1800  W=+0.9575  L_G=-2.5611  spy_ret std real=0.0256 fake=0.0157  vix_chg std real=0.1496 fake=0.1473
+ep  2100  W=+0.7934  L_G=-2.5412  spy_ret std real=0.0247 fake=0.0199  vix_chg std real=0.1492 fake=0.1470
+ep  2400  W=+0.5559  L_G=-2.5107  spy_ret std real=0.0247 fake=0.0196  vix_chg std real=0.1426 fake=0.1299
+ep  2700  W=+0.9367  L_G=-2.2344  spy_ret std real=0.0254 fake=0.0175  vix_chg std real=0.1515 fake=0.1303
+ep  3000  W=+0.7039  L_G=-3.3979  spy_ret std real=0.0246 fake=0.0214  vix_chg std real=0.1496 fake=0.1587
+
+Generator saved -> results/nsde/nsde_generator.pth
+
+========================================================================
+DIAGNOSTICS
+========================================================================
+
+  Tail statistics (SPY weekly log-returns):
+  Stat                       Real    Generated
+  --------------------------------------------
+  1th pctile              -0.0731      -0.0645
+  5th pctile              -0.0398      -0.0436
+  25th pctile             -0.0082      -0.0164
+  50th pctile             +0.0032      -0.0040
+  75th pctile             +0.0147      +0.0090
+  95th pctile             +0.0345      +0.0265
+  99th pctile             +0.0644      +0.0367
+  std                      0.0254       0.0208
+  skewness                -1.1995      -0.5573
+  kurtosis               +14.4170      +3.5765
+  Saved: results/nsde/training_loss.png
+  Saved: results/nsde/distribution_comparison.png
+
+Sample generated paths (first 6 windows):
+  SPY paths (T+1 steps, normalised to 100):
+    path 0: 100.0 100.0 96.5 95.8 94.0 88.1 89.0
+    path 1: 100.0 97.8 100.2 99.7 98.2 98.4 98.2
+    path 2: 100.0 98.0 94.2 94.7 91.5 93.7 91.1
+  VIX paths:
+    path 0: 100.0 102.5 135.5 127.4 136.9 202.1 160.8
+    path 1: 100.0 118.7 97.3 109.5 114.3 125.5 140.7
+    path 2: 100.0 110.7 125.1 101.5 115.7 83.7 95.2
+
+Neural SDE training complete.
+Next step: python main_nsde_hedge.py

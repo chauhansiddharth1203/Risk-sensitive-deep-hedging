@@ -1,0 +1,92 @@
+========================================================================
+GATE THRESHOLD VALIDATION  (2024 held out)
+Sweep theta in [2.0, 2.5, 3.0, 3.5]   w=0.3  1 seeds x 2 epochs
+Selection criterion: argmax mean(Δ_2022, Δ_2023) s.t. COVID mean > -2.5 AND std < 2.0
+========================================================================
+
+------------------------------------------------------------
+theta = 2.0
+  seed 0...
+ep    1  loss=+197.609  CVaR_train=-175.287  CVaR_val=-49.541  gate(thr=2.000, sc=0.300)
+    2022 Rate shock                  Δ=-4.999
+    2023 SVB / banking               Δ=-4.308
+    2020 COVID                       Δ=-5.659
+
+  Aggregated (theta=2.0):
+    2022 Rate shock                  mean=-4.999  std=0.000
+    2023 SVB / banking               mean=-4.308  std=0.000
+    2020 COVID                       mean=-5.659  std=0.000
+
+------------------------------------------------------------
+theta = 2.5
+  seed 0...
+ep    1  loss=+197.609  CVaR_train=-175.287  CVaR_val=-49.541  gate(thr=2.500, sc=0.300)
+    2022 Rate shock                  Δ=-4.998
+    2023 SVB / banking               Δ=-4.307
+    2020 COVID                       Δ=-5.657
+
+  Aggregated (theta=2.5):
+    2022 Rate shock                  mean=-4.998  std=0.000
+    2023 SVB / banking               mean=-4.307  std=0.000
+    2020 COVID                       mean=-5.657  std=0.000
+
+------------------------------------------------------------
+theta = 3.0
+  seed 0...
+ep    1  loss=+197.609  CVaR_train=-175.287  CVaR_val=-49.540  gate(thr=3.000, sc=0.300)
+    2022 Rate shock                  Δ=-4.995
+    2023 SVB / banking               Δ=-4.303
+    2020 COVID                       Δ=-5.652
+
+  Aggregated (theta=3.0):
+    2022 Rate shock                  mean=-4.995  std=0.000
+    2023 SVB / banking               mean=-4.303  std=0.000
+    2020 COVID                       mean=-5.652  std=0.000
+
+------------------------------------------------------------
+theta = 3.5
+  seed 0...
+ep    1  loss=+197.609  CVaR_train=-175.287  CVaR_val=-49.538  gate(thr=3.500, sc=0.300)
+    2022 Rate shock                  Δ=-4.990
+    2023 SVB / banking               Δ=-4.298
+    2020 COVID                       Δ=-5.645
+
+  Aggregated (theta=3.5):
+    2022 Rate shock                  mean=-4.990  std=0.000
+    2023 SVB / banking               mean=-4.298  std=0.000
+    2020 COVID                       mean=-5.645  std=0.000
+
+========================================================================
+THRESHOLD SELECTION
+========================================================================
+  theta=2.0  val_score=-4.653  COVID mean=-5.659 std=0.000  [FAIL] violates COVID constraint
+  theta=2.5  val_score=-4.652  COVID mean=-5.657 std=0.000  [FAIL] violates COVID constraint
+  theta=3.0  val_score=-4.649  COVID mean=-5.652 std=0.000  [FAIL] violates COVID constraint
+  theta=3.5  val_score=-4.644  COVID mean=-5.645 std=0.000  [FAIL] violates COVID constraint
+
+  ⚠ No theta satisfies COVID constraint — selecting by val_score only (flag this in writeup)
+
+  ***  Selected theta* = 3.5  (val_score=-inf)
+
+========================================================================
+FINAL TEST ON HELD-OUT 2024  (theta* = 3.5)
+========================================================================
+  seed 0 — re-training at theta*=3.5…
+ep    1  loss=+197.609  CVaR_train=-175.287  CVaR_val=-49.538  gate(thr=3.500, sc=0.300)
+    2024 Δ = -2.278
+
+  2024 Final Test:  mean Δ = -2.278  std = 0.000
+  Pre-registered pass (mean>0 AND std<|mean|): [FAIL] FAIL
+
+  Comparison:
+    Week-13 (theta selected on all 7 windows): +1.11 +/- 0.10
+    This run (theta selected on 2022-23 only): -2.278 +/- 0.000
+Traceback (most recent call last):
+  File "C:\Users\HP\Downloads\Claude\Deep-Hedging-Cvar-Heston\Deep-Hedging-Cvar-Heston\main_gate_threshold_validation.py", line 406, in <module>
+    main()
+  File "C:\Users\HP\Downloads\Claude\Deep-Hedging-Cvar-Heston\Deep-Hedging-Cvar-Heston\main_gate_threshold_validation.py", line 306, in main
+    f.write("  theta* = argmax mean(Δ_2022, Δ_2023) s.t. "
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u0394' in position 23: character maps to <undefined>

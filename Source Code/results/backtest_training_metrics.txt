@@ -1,0 +1,31 @@
+Week 9 — Backtest-trained deep hedger vs BS delta
+========================================================================
+
+Training: stationary block bootstrap on SPY 2005-2017
+Testing : same rolling windows as Week 7/8
+
+2008 GFC (in-train)  (n=86 windows)
+  BS    CVaR95 = -12.123  [-15.379, -8.262]  std=2.789
+  Deep  CVaR95 = -13.798  [-15.199, -11.544]  std=3.790
+  Δ(Deep-BS)   =  -1.674  [-4.804, +2.461]
+
+2017 Calm (in-train)  (n=70 windows)
+  BS    CVaR95 =  -2.618  [-2.973, -2.024]  std=0.566
+  Deep  CVaR95 =  -2.794  [-3.399, -2.187]  std=0.674
+  Δ(Deep-BS)   =  -0.177  [-0.426, -0.040]
+
+2018 Volmageddon  (n=44 windows)
+  BS    CVaR95 =  -4.116  [-4.257, -3.207]  std=1.057
+  Deep  CVaR95 =  -5.389  [-7.154, -2.752]  std=1.375
+  Δ(Deep-BS)   =  -1.272  [-2.898, +0.729]
+
+2020 COVID (OOT)  (n=53 windows)
+  BS    CVaR95 =  -8.592  [-9.501, -6.587]  std=2.023
+  Deep  CVaR95 = -15.061  [-15.710, -12.376]  std=3.961
+  Δ(Deep-BS)   =  -6.468  [-8.484, -3.751]
+
+2022 Rate shock  (n=44 windows)
+  BS    CVaR95 =  -5.619  [-5.788, -5.075]  std=1.367
+  Deep  CVaR95 =  -7.170  [-7.346, -6.193]  std=2.265
+  Δ(Deep-BS)   =  -1.551  [-2.030, -0.568]
+

@@ -1,0 +1,40 @@
+Sprint 1 — Expanded training corpus (SPY 2005-2020)
+========================================================================
+
+Held-out test pool: 2021-01-01 → 2024-12-31
+
+2008 GFC (in-train)  (n=86 windows)
+  BS    CVaR95 = -12.123  [-15.379, -8.262]  std=2.789
+  Deep  CVaR95 = -13.445  [-15.630, -11.071]  std=3.779
+  Δ(Deep-BS)   =  -1.322  [-4.689, +2.794]
+
+2017 Calm (in-train)  (n=70 windows)
+  BS    CVaR95 =  -2.618  [-2.973, -2.024]  std=0.566
+  Deep  CVaR95 =  -2.675  [-3.323, -2.066]  std=0.648
+  Δ(Deep-BS)   =  -0.057  [-0.350, +0.091]
+
+2018 Volmageddon (in-train)  (n=44 windows)
+  BS    CVaR95 =  -4.116  [-4.257, -3.207]  std=1.057
+  Deep  CVaR95 =  -5.729  [-7.730, -2.879]  std=1.466
+  Δ(Deep-BS)   =  -1.613  [-3.474, +0.887]
+
+2020 COVID (in-train NOW)  (n=53 windows)
+  BS    CVaR95 =  -8.592  [-9.501, -6.587]  std=2.023
+  Deep  CVaR95 = -13.579  [-13.603, -9.181]  std=3.361
+  Δ(Deep-BS)   =  -4.986  [-6.604, -0.612]
+
+2022 Rate shock (OOT)  (n=44 windows)
+  BS    CVaR95 =  -5.619  [-5.788, -5.075]  std=1.367
+  Deep  CVaR95 =  -7.417  [-7.484, -5.754]  std=2.328
+  Δ(Deep-BS)   =  -1.798  [-2.271, -0.374]
+
+2023 SVB / banking (OOT)  (n=44 windows)
+  BS    CVaR95 =  -3.966  [-4.146, -3.448]  std=0.958
+  Deep  CVaR95 =  -4.727  [-4.919, -3.640]  std=1.259
+  Δ(Deep-BS)   =  -0.762  [-0.848, -0.114]
+
+2024 Full year (OOT)  (n=44 windows)
+  BS    CVaR95 =  -4.037  [-4.668, -3.205]  std=0.978
+  Deep  CVaR95 =  -4.535  [-5.358, -3.454]  std=1.390
+  Δ(Deep-BS)   =  -0.498  [-0.690, -0.105]
+

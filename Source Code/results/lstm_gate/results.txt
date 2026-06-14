@@ -1,0 +1,12 @@
+LSTM GATE RESULTS
+========================================================================
+
+2008 GFC                          LSTM=-7.776+-3.597  scalar=-2.530  imp=-5.246
+2017 Calm                         LSTM=+0.483+-0.116  scalar=-0.440  imp=+0.923
+2018 Volmageddon                  LSTM=-3.107+-1.555  scalar=-0.440  imp=-2.667
+2020 COVID                        LSTM=-7.815+-5.723  scalar=-1.177  imp=-6.638
+2022 Rate shock                   LSTM=-2.265+-0.923  scalar=-0.870  imp=-1.395
+2023 SVB                          LSTM=+0.061+-0.305  scalar=-0.350  imp=+0.411
+2024 Full year                    LSTM=+1.136+-0.065  scalar=+1.112  imp=+0.024
+
+Verdict: PARTIAL

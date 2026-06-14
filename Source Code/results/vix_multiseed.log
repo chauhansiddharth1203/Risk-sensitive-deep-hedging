@@ -1,0 +1,114 @@
+/Users/s933746/Deep Hedging/Deep-Hedging-Cvar-Heston/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+
+[seed=0] training…
+ep    1  loss=+197.609  CVaR_train=-175.287  mean=-44.643  CVaR_val=-49.537
+ep   50  loss=+167.867  CVaR_train=-149.236  mean=-37.261  CVaR_val=-49.362
+ep  100  loss=+148.244  CVaR_train=-130.878  mean=-34.732  CVaR_val=-35.498
+ep  150  loss=+112.209  CVaR_train=-98.877  mean=-26.664  CVaR_val=-38.168
+ep  200  loss=+132.554  CVaR_train=-119.392  mean=-26.324  CVaR_val=-33.846
+ep  250  loss=+119.293  CVaR_train=-108.607  mean=-21.373  CVaR_val=-31.607
+ep  300  loss=+125.262  CVaR_train=-116.875  mean=-16.774  CVaR_val=-36.416
+ep  350  loss=+133.375  CVaR_train=-123.634  mean=-19.481  CVaR_val=-34.502
+ep  400  loss=+142.219  CVaR_train=-134.146  mean=-16.146  CVaR_val=-41.290
+[seed=0] evaluating…
+2008 GFC (in-train)              n= 89  BS= -13.54[-14.17,-11.03]  DH= -18.82[-21.05,-14.46]  Δ= -5.27[ -8.19, -1.66]
+2017 Calm (in-train)             n= 72  BS=  -3.92[ -5.47, -2.68]  DH=  -3.57[ -4.44, -2.23]  Δ= +0.35[ -0.08, +1.03]
+2018 Volmageddon (in-train)      n= 45  BS=  -4.35[ -4.39, -3.54]  DH=  -6.24[ -7.66, -3.61]  Δ= -1.88[ -3.27, +0.47]
+2020 COVID (in-train)            n= 55  BS= -13.81[-14.00, -9.63]  DH= -18.20[-21.04,-10.56]  Δ= -4.39[-10.04, +1.11]
+2022 Rate shock (OOT)            n= 45  BS=  -7.55[ -8.08, -5.46]  DH=  -9.18[ -9.19, -7.98]  Δ= -1.63[ -3.68, -0.42]
+2023 SVB / banking (OOT)         n= 45  BS=  -6.21[ -7.96, -3.83]  DH=  -5.84[ -7.14, -3.74]  Δ= +0.36[ -0.51, +0.81]
+2024 Full year (OOT)             n= 46  BS=  -5.44[ -5.65, -4.09]  DH=  -4.33[ -4.69, -3.00]  Δ= +1.11[ +0.32, +1.93]
+
+[seed=1] training…
+ep    1  loss=+158.894  CVaR_train=-141.292  mean=-35.204  CVaR_val=-50.459
+ep   50  loss=+171.432  CVaR_train=-152.552  mean=-37.762  CVaR_val=-44.594
+ep  100  loss=+159.651  CVaR_train=-141.798  mean=-35.706  CVaR_val=-40.202
+ep  150  loss=+136.864  CVaR_train=-120.658  mean=-32.413  CVaR_val=-33.574
+ep  200  loss=+125.252  CVaR_train=-112.795  mean=-24.914  CVaR_val=-37.066
+ep  250  loss=+109.205  CVaR_train=-99.470  mean=-19.471  CVaR_val=-38.002
+ep  300  loss=+112.122  CVaR_train=-104.429  mean=-15.386  CVaR_val=-33.193
+ep  350  loss=+149.814  CVaR_train=-139.847  mean=-19.934  CVaR_val=-32.962
+ep  400  loss=+170.606  CVaR_train=-160.512  mean=-20.188  CVaR_val=-38.588
+[seed=1] evaluating…
+2008 GFC (in-train)              n= 89  BS= -13.54[-14.17,-11.03]  DH= -26.26[-30.69,-15.94]  Δ=-12.72[-18.28, -3.51]
+2017 Calm (in-train)             n= 72  BS=  -3.92[ -5.47, -2.68]  DH=  -3.26[ -4.42, -2.00]  Δ= +0.66[ +0.25, +1.04]
+2018 Volmageddon (in-train)      n= 45  BS=  -4.35[ -4.39, -3.54]  DH=  -9.60[-11.15, -4.77]  Δ= -5.25[ -6.76, -1.03]
+2020 COVID (in-train)            n= 55  BS= -13.81[-14.00, -9.63]  DH= -29.15[-35.56,-13.07]  Δ=-15.33[-24.56, +0.74]
+2022 Rate shock (OOT)            n= 45  BS=  -7.55[ -8.08, -5.46]  DH= -11.07[-11.08, -8.83]  Δ= -3.53[ -5.54, -1.50]
+2023 SVB / banking (OOT)         n= 45  BS=  -6.21[ -7.96, -3.83]  DH=  -6.57[ -6.96, -3.64]  Δ= -0.36[ -2.11, +1.00]
+2024 Full year (OOT)             n= 46  BS=  -5.44[ -5.65, -4.09]  DH=  -4.29[ -4.46, -3.38]  Δ= +1.15[ +0.56, +1.53]
+
+[seed=2] training…
+ep    1  loss=+172.649  CVaR_train=-154.223  mean=-36.851  CVaR_val=-53.131
+ep   50  loss=+178.789  CVaR_train=-159.101  mean=-39.377  CVaR_val=-49.318
+ep  100  loss=+160.569  CVaR_train=-142.778  mean=-35.582  CVaR_val=-43.486
+ep  150  loss=+147.568  CVaR_train=-130.199  mean=-34.738  CVaR_val=-32.757
+ep  200  loss=+134.287  CVaR_train=-118.697  mean=-31.181  CVaR_val=-32.115
+ep  250  loss=+137.036  CVaR_train=-122.712  mean=-28.647  CVaR_val=-29.754
+ep  300  loss=+114.115  CVaR_train=-103.967  mean=-20.298  CVaR_val=-34.379
+ep  350  loss=+131.989  CVaR_train=-123.117  mean=-17.743  CVaR_val=-35.234
+ep  400  loss=+131.885  CVaR_train=-125.045  mean=-13.679  CVaR_val=-37.200
+[seed=2] evaluating…
+2008 GFC (in-train)              n= 89  BS= -13.54[-14.17,-11.03]  DH= -17.35[-18.37,-13.89]  Δ= -3.80[ -6.11, -1.08]
+2017 Calm (in-train)             n= 72  BS=  -3.92[ -5.47, -2.68]  DH=  -3.59[ -4.54, -2.29]  Δ= +0.33[ -0.06, +0.92]
+2018 Volmageddon (in-train)      n= 45  BS=  -4.35[ -4.39, -3.54]  DH=  -5.92[ -7.26, -3.57]  Δ= -1.57[ -2.87, +0.35]
+2020 COVID (in-train)            n= 55  BS= -13.81[-14.00, -9.63]  DH= -15.48[-16.48, -8.71]  Δ= -1.67[ -5.49, +1.13]
+2022 Rate shock (OOT)            n= 45  BS=  -7.55[ -8.08, -5.46]  DH=  -8.67[ -8.70, -7.74]  Δ= -1.13[ -3.18, -0.09]
+2023 SVB / banking (OOT)         n= 45  BS=  -6.21[ -7.96, -3.83]  DH=  -5.90[ -7.44, -3.81]  Δ= +0.31[ -0.40, +0.58]
+2024 Full year (OOT)             n= 46  BS=  -5.44[ -5.65, -4.09]  DH=  -4.32[ -4.64, -3.12]  Δ= +1.12[ +0.38, +1.64]
+
+[seed=3] training…
+ep    1  loss=+170.517  CVaR_train=-152.096  mean=-36.843  CVaR_val=-54.271
+ep   50  loss=+169.843  CVaR_train=-151.974  mean=-35.738  CVaR_val=-49.650
+ep  100  loss=+166.988  CVaR_train=-148.760  mean=-36.457  CVaR_val=-42.037
+ep  150  loss=+153.872  CVaR_train=-136.869  mean=-34.006  CVaR_val=-33.127
+ep  200  loss=+115.445  CVaR_train=-103.631  mean=-23.626  CVaR_val=-38.038
+ep  250  loss=+117.768  CVaR_train=-107.120  mean=-21.296  CVaR_val=-31.339
+ep  300  loss=+112.086  CVaR_train=-102.926  mean=-18.319  CVaR_val=-32.489
+ep  350  loss=+128.388  CVaR_train=-120.462  mean=-15.852  CVaR_val=-37.548
+ep  400  loss=+132.070  CVaR_train=-125.017  mean=-14.105  CVaR_val=-38.248
+[seed=3] evaluating…
+2008 GFC (in-train)              n= 89  BS= -13.54[-14.17,-11.03]  DH= -23.92[-26.89,-15.29]  Δ=-10.37[-14.45, -3.09]
+2017 Calm (in-train)             n= 72  BS=  -3.92[ -5.47, -2.68]  DH=  -3.29[ -4.32, -1.99]  Δ= +0.63[ +0.17, +1.15]
+2018 Volmageddon (in-train)      n= 45  BS=  -4.35[ -4.39, -3.54]  DH=  -8.41[-10.09, -4.47]  Δ= -4.06[ -5.70, -0.71]
+2020 COVID (in-train)            n= 55  BS= -13.81[-14.00, -9.63]  DH= -25.68[-30.90,-13.36]  Δ=-11.86[-19.90, +0.45]
+2022 Rate shock (OOT)            n= 45  BS=  -7.55[ -8.08, -5.46]  DH= -10.42[-10.48, -8.71]  Δ= -2.87[ -4.86, -1.11]
+2023 SVB / banking (OOT)         n= 45  BS=  -6.21[ -7.96, -3.83]  DH=  -6.31[ -6.94, -3.59]  Δ= -0.10[ -1.62, +1.01]
+2024 Full year (OOT)             n= 46  BS=  -5.44[ -5.65, -4.09]  DH=  -4.17[ -4.40, -3.19]  Δ= +1.27[ +0.62, +1.70]
+
+[seed=4] training…
+ep    1  loss=+173.979  CVaR_train=-154.283  mean=-39.391  CVaR_val=-51.163
+ep   50  loss=+158.437  CVaR_train=-141.011  mean=-34.853  CVaR_val=-44.722
+ep  100  loss=+152.491  CVaR_train=-134.988  mean=-35.008  CVaR_val=-38.654
+ep  150  loss=+126.517  CVaR_train=-112.476  mean=-28.083  CVaR_val=-33.792
+ep  200  loss=+108.746  CVaR_train=-98.514  mean=-20.463  CVaR_val=-31.450
+ep  250  loss=+108.029  CVaR_train=-98.940  mean=-18.178  CVaR_val=-34.488
+ep  300  loss=+129.719  CVaR_train=-120.245  mean=-18.947  CVaR_val=-37.929
+ep  350  loss=+151.204  CVaR_train=-140.260  mean=-21.888  CVaR_val=-32.977
+ep  400  loss=+120.002  CVaR_train=-113.194  mean=-13.615  CVaR_val=-38.436
+[seed=4] evaluating…
+2008 GFC (in-train)              n= 89  BS= -13.54[-14.17,-11.03]  DH= -20.32[-22.52,-14.38]  Δ= -6.78[ -9.70, -2.18]
+2017 Calm (in-train)             n= 72  BS=  -3.92[ -5.47, -2.68]  DH=  -3.49[ -4.54, -2.16]  Δ= +0.43[ +0.03, +0.92]
+2018 Volmageddon (in-train)      n= 45  BS=  -4.35[ -4.39, -3.54]  DH=  -6.70[ -8.46, -3.97]  Δ= -2.35[ -4.07, -0.18]
+2020 COVID (in-train)            n= 55  BS= -13.81[-14.00, -9.63]  DH= -20.82[-24.15,-12.08]  Δ= -7.01[-13.15, +0.25]
+2022 Rate shock (OOT)            n= 45  BS=  -7.55[ -8.08, -5.46]  DH=  -9.40[ -9.42, -8.04]  Δ= -1.85[ -3.86, -0.49]
+2023 SVB / banking (OOT)         n= 45  BS=  -6.21[ -7.96, -3.83]  DH=  -6.06[ -7.21, -3.64]  Δ= +0.15[ -0.85, +0.81]
+2024 Full year (OOT)             n= 46  BS=  -5.44[ -5.65, -4.09]  DH=  -4.31[ -4.57, -2.90]  Δ= +1.13[ +0.44, +1.60]
+
+========================================================================
+Aggregated across seeds:
+Window                              mean Δ     std      min      max
+2008 GFC (in-train)                 -7.789   3.293  -12.717   -3.804
+2017 Calm (in-train)                +0.479   0.140   +0.326   +0.659
+2018 Volmageddon (in-train)         -3.022   1.408   -5.251   -1.567
+2020 COVID (in-train)               -8.054   4.955  -15.334   -1.671
+2022 Rate shock (OOT)               -2.201   0.872   -3.526   -1.126
+2023 SVB / banking (OOT)            +0.072   0.271   -0.359   +0.364
+2024 Full year (OOT)                +1.157   0.058   +1.109   +1.268
+
+Decision-rule check:
+  2024 mean Δ=+1.157, std=0.058  → real win? True
+  COVID mean Δ=-8.054, std=4.955  → closure? False
+
+>>> Mixed: one criterion met. Report as weak evidence.

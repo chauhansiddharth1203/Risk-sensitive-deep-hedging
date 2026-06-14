@@ -1,0 +1,166 @@
+========================================================================
+LSTM GATE TWO-STAGE TRAINING
+seeds=5  epochs_policy=400  epochs_gate=200
+Pre-registered criteria:
+  2024 OOT: mean > 0 AND std < |mean|
+  2022 improvement: LSTM mean > scalar mean (-0.870)
+========================================================================
+
+==================================================
+SEED 0
+==================================================
+
+Stage 1: Training policy (gate frozen open)...
+  [Stage1 seed=0] ep    1  CVaR=-175.287  mean=-44.643
+  [Stage1 seed=0] ep  100  CVaR=-127.890  mean=-33.177
+  [Stage1 seed=0] ep  200  CVaR=-114.911  mean=-27.346
+  [Stage1 seed=0] ep  300  CVaR=-113.277  mean=-19.371
+  [Stage1 seed=0] ep  400  CVaR=-135.477  mean=-18.147
+
+Stage 2: Training LSTM gate (policy frozen)...
+  [Stage2 seed=0] ep    1  CVaR=-39.703  mean=-6.557
+  [Stage2 seed=0] ep   50  CVaR=-32.224  mean=-5.540
+  [Stage2 seed=0] ep  100  CVaR=-36.748  mean=-6.260
+  [Stage2 seed=0] ep  150  CVaR=-36.848  mean=-6.387
+  [Stage2 seed=0] ep  200  CVaR=-39.537  mean=-6.323
+
+Evaluating seed 0...
+  2008 GFC                         Delta=-5.097 [-7.870,-1.543]
+  2017 Calm                        Delta=+0.413 [-0.062,+1.078]
+  2018 Volmageddon                 Delta=-1.911 [-3.258,+0.445]
+  2020 COVID                       Delta=-3.300 [-8.991,+1.031]
+  2022 Rate shock                  Delta=-1.737 [-3.790,-0.578]
+  2023 SVB                         Delta=+0.371 [-0.550,+0.903]
+  2024 Full year                   Delta=+1.115 [+0.370,+1.899]
+
+==================================================
+SEED 1
+==================================================
+
+Stage 1: Training policy (gate frozen open)...
+  [Stage1 seed=1] ep    1  CVaR=-141.292  mean=-35.204
+  [Stage1 seed=1] ep  100  CVaR=-137.787  mean=-35.243
+  [Stage1 seed=1] ep  200  CVaR=-104.245  mean=-24.192
+  [Stage1 seed=1] ep  300  CVaR=-114.594  mean=-19.672
+  [Stage1 seed=1] ep  400  CVaR=-158.152  mean=-19.784
+
+Stage 2: Training LSTM gate (policy frozen)...
+  [Stage2 seed=1] ep    1  CVaR=-37.655  mean=-6.238
+  [Stage2 seed=1] ep   50  CVaR=-36.772  mean=-6.202
+  [Stage2 seed=1] ep  100  CVaR=-37.507  mean=-5.597
+  [Stage2 seed=1] ep  150  CVaR=-37.232  mean=-6.929
+  [Stage2 seed=1] ep  200  CVaR=-37.539  mean=-6.556
+
+Evaluating seed 1...
+  2008 GFC                         Delta=-13.335 [-19.230,-3.483]
+  2017 Calm                        Delta=+0.507 [+0.180,+0.985]
+  2018 Volmageddon                 Delta=-5.649 [-7.055,-1.105]
+  2020 COVID                       Delta=-16.862 [-26.109,+0.852]
+  2022 Rate shock                  Delta=-3.664 [-5.654,-1.582]
+  2023 SVB                         Delta=-0.449 [-2.251,+0.959]
+  2024 Full year                   Delta=+1.087 [+0.530,+1.401]
+
+==================================================
+SEED 2
+==================================================
+
+Stage 1: Training policy (gate frozen open)...
+  [Stage1 seed=2] ep    1  CVaR=-154.223  mean=-36.851
+  [Stage1 seed=2] ep  100  CVaR=-145.406  mean=-37.271
+  [Stage1 seed=2] ep  200  CVaR=-119.337  mean=-29.651
+  [Stage1 seed=2] ep  300  CVaR=-113.477  mean=-21.844
+  [Stage1 seed=2] ep  400  CVaR=-134.051  mean=-22.112
+
+Stage 2: Training LSTM gate (policy frozen)...
+  [Stage2 seed=2] ep    1  CVaR=-36.638  mean=-6.820
+  [Stage2 seed=2] ep   50  CVaR=-37.739  mean=-7.153
+  [Stage2 seed=2] ep  100  CVaR=-36.021  mean=-6.474
+  [Stage2 seed=2] ep  150  CVaR=-35.424  mean=-6.304
+  [Stage2 seed=2] ep  200  CVaR=-35.362  mean=-6.619
+
+Evaluating seed 2...
+  2008 GFC                         Delta=-3.443 [-5.733,-0.920]
+  2017 Calm                        Delta=+0.334 [-0.081,+0.896]
+  2018 Volmageddon                 Delta=-1.475 [-2.704,+0.401]
+  2020 COVID                       Delta=-1.378 [-4.934,+1.095]
+  2022 Rate shock                  Delta=-1.029 [-3.113,-0.054]
+  2023 SVB                         Delta=+0.327 [-0.366,+0.600]
+  2024 Full year                   Delta=+1.076 [+0.362,+1.572]
+
+==================================================
+SEED 3
+==================================================
+
+Stage 1: Training policy (gate frozen open)...
+  [Stage1 seed=3] ep    1  CVaR=-152.096  mean=-36.843
+  [Stage1 seed=3] ep  100  CVaR=-146.946  mean=-35.587
+  [Stage1 seed=3] ep  200  CVaR=-114.399  mean=-27.753
+  [Stage1 seed=3] ep  300  CVaR=-122.837  mean=-21.435
+  [Stage1 seed=3] ep  400  CVaR=-145.196  mean=-18.266
+
+Stage 2: Training LSTM gate (policy frozen)...
+  [Stage2 seed=3] ep    1  CVaR=-35.820  mean=-6.466
+  [Stage2 seed=3] ep   50  CVaR=-36.997  mean=-5.993
+  [Stage2 seed=3] ep  100  CVaR=-39.054  mean=-6.124
+  [Stage2 seed=3] ep  150  CVaR=-36.173  mean=-6.763
+  [Stage2 seed=3] ep  200  CVaR=-38.519  mean=-6.835
+
+Evaluating seed 3...
+  2008 GFC                         Delta=-10.347 [-14.362,-3.095]
+  2017 Calm                        Delta=+0.680 [+0.168,+1.180]
+  2018 Volmageddon                 Delta=-4.113 [-5.718,-0.840]
+  2020 COVID                       Delta=-11.793 [-19.854,+0.571]
+  2022 Rate shock                  Delta=-2.913 [-4.928,-1.217]
+  2023 SVB                         Delta=-0.106 [-1.664,+1.057]
+  2024 Full year                   Delta=+1.258 [+0.619,+1.677]
+
+==================================================
+SEED 4
+==================================================
+
+Stage 1: Training policy (gate frozen open)...
+  [Stage1 seed=4] ep    1  CVaR=-154.283  mean=-39.391
+  [Stage1 seed=4] ep  100  CVaR=-134.228  mean=-37.206
+  [Stage1 seed=4] ep  200  CVaR=-105.948  mean=-24.551
+  [Stage1 seed=4] ep  300  CVaR=-124.857  mean=-21.571
+  [Stage1 seed=4] ep  400  CVaR=-141.325  mean=-18.000
+
+Stage 2: Training LSTM gate (policy frozen)...
+  [Stage2 seed=4] ep    1  CVaR=-39.647  mean=-5.962
+  [Stage2 seed=4] ep   50  CVaR=-38.076  mean=-7.207
+  [Stage2 seed=4] ep  100  CVaR=-38.942  mean=-6.889
+  [Stage2 seed=4] ep  150  CVaR=-37.873  mean=-6.451
+  [Stage2 seed=4] ep  200  CVaR=-41.166  mean=-7.938
+
+Evaluating seed 4...
+  2008 GFC                         Delta=-6.659 [-9.532,-2.133]
+  2017 Calm                        Delta=+0.482 [+0.042,+0.980]
+  2018 Volmageddon                 Delta=-2.385 [-4.051,-0.239]
+  2020 COVID                       Delta=-5.744 [-12.379,+0.421]
+  2022 Rate shock                  Delta=-1.983 [-3.968,-0.671]
+  2023 SVB                         Delta=+0.162 [-0.906,+0.841]
+  2024 Full year                   Delta=+1.144 [+0.458,+1.620]
+
+========================================================================
+AGGREGATED RESULTS: LSTM gate vs Scalar gate (Step 1)
+========================================================================
+Window                             LSTM mean     std   Scalar mean   Improvement
+--------------------------------------------------------------------------------
+2008 GFC                              -7.776   3.597        -2.530        -5.246
+2017 Calm                             +0.483   0.116        -0.440        +0.923
+2018 Volmageddon                      -3.107   1.555        -0.440        -2.667
+2020 COVID                            -7.815   5.723        -1.177        -6.638
+2022 Rate shock                       -2.265   0.923        -0.870        -1.395
+2023 SVB                              +0.061   0.305        -0.350        +0.411
+2024 Full year                        +1.136   0.065        +1.112        +0.024
+
+Decision rules:
+  2024 OOT win preserved: mean=+1.136 > 0 AND std=0.065 < mean -> PASS
+  2022 improvement over scalar: LSTM=-2.265 > scalar=-0.870 -> FAIL
+
+Overall verdict: PARTIAL
+LSTM gate preserves calm win but does NOT improve 2022.
+  Scalar gate is adequate for this architecture.
+
+Results written -> results/lstm_gate/results.txt
+Figure written -> results/lstm_gate/comparison.png

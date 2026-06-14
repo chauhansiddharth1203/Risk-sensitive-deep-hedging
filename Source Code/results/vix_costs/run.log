@@ -1,0 +1,187 @@
+========================================================================
+VIX FUTURES WITH REALISTIC BID-ASK COSTS
+theta = 3.0  width = 0.3  train_spread = 0.0 pts
+seeds = 3  epochs = 400
+Evaluating at spreads: [0.0, 0.05, 0.1, 0.2, 0.3] VIX pts
+========================================================================
+
+[seed 0] Training...
+  ep    1  loss=+197.609  CVaR=-175.287  mean=-44.643
+  ep  100  loss=+144.516  CVaR=-127.970  mean=-33.093
+  ep  200  loss=+129.044  CVaR=-115.770  mean=-26.549
+  ep  300  loss=+123.608  CVaR=-114.119  mean=-18.979
+  ep  400  loss=+144.232  CVaR=-135.579  mean=-17.306
+
+[seed 1] Training...
+  ep    1  loss=+158.894  CVaR=-141.292  mean=-35.204
+  ep  100  loss=+155.544  CVaR=-137.963  mean=-35.164
+  ep  200  loss=+116.508  CVaR=-104.439  mean=-24.139
+  ep  300  loss=+123.265  CVaR=-113.563  mean=-19.403
+  ep  400  loss=+166.210  CVaR=-156.731  mean=-18.957
+
+[seed 2] Training...
+  ep    1  loss=+172.649  CVaR=-154.223  mean=-36.851
+  ep  100  loss=+164.304  CVaR=-145.667  mean=-37.273
+  ep  200  loss=+134.713  CVaR=-120.074  mean=-29.278
+  ep  300  loss=+123.767  CVaR=-113.294  mean=-20.947
+  ep  400  loss=+144.479  CVaR=-134.026  mean=-20.907
+
+  Evaluating seed 0 at spread=0.00 pts...
+    2008 GFC                          Delta=-2.041 [-5.316,+1.158]
+    2017 Calm                         Delta=-0.611 [-1.844,+0.708]
+    2018 Volmageddon                  Delta=+0.015 [-0.753,+0.451]
+    2020 COVID                        Delta=-1.216 [-1.607,+4.844]
+    2022 Rate shock                   Delta=-0.644 [-2.483,+0.268]
+    2023 SVB                          Delta=-0.346 [-1.489,+0.553]
+    2024 Full year                    Delta=+1.041 [+0.118,+1.894]
+
+  Evaluating seed 0 at spread=0.05 pts...
+    2008 GFC                          Delta=-2.041 [-5.316,+1.158]
+    2017 Calm                         Delta=-0.611 [-1.844,+0.708]
+    2018 Volmageddon                  Delta=+0.015 [-0.753,+0.451]
+    2020 COVID                        Delta=-1.216 [-1.607,+4.844]
+    2022 Rate shock                   Delta=-0.644 [-2.483,+0.268]
+    2023 SVB                          Delta=-0.346 [-1.489,+0.553]
+    2024 Full year                    Delta=+1.041 [+0.118,+1.894]
+
+  Evaluating seed 0 at spread=0.10 pts...
+    2008 GFC                          Delta=-2.041 [-5.316,+1.158]
+    2017 Calm                         Delta=-0.612 [-1.844,+0.708]
+    2018 Volmageddon                  Delta=+0.015 [-0.753,+0.451]
+    2020 COVID                        Delta=-1.216 [-1.607,+4.844]
+    2022 Rate shock                   Delta=-0.644 [-2.483,+0.268]
+    2023 SVB                          Delta=-0.346 [-1.489,+0.553]
+    2024 Full year                    Delta=+1.041 [+0.118,+1.894]
+
+  Evaluating seed 0 at spread=0.20 pts...
+    2008 GFC                          Delta=-2.041 [-5.316,+1.158]
+    2017 Calm                         Delta=-0.612 [-1.844,+0.708]
+    2018 Volmageddon                  Delta=+0.015 [-0.753,+0.450]
+    2020 COVID                        Delta=-1.217 [-1.607,+4.844]
+    2022 Rate shock                   Delta=-0.645 [-2.483,+0.268]
+    2023 SVB                          Delta=-0.346 [-1.489,+0.553]
+    2024 Full year                    Delta=+1.041 [+0.118,+1.894]
+
+  Evaluating seed 0 at spread=0.30 pts...
+    2008 GFC                          Delta=-2.041 [-5.316,+1.158]
+    2017 Calm                         Delta=-0.612 [-1.844,+0.708]
+    2018 Volmageddon                  Delta=+0.015 [-0.754,+0.450]
+    2020 COVID                        Delta=-1.217 [-1.607,+4.844]
+    2022 Rate shock                   Delta=-0.645 [-2.483,+0.268]
+    2023 SVB                          Delta=-0.347 [-1.489,+0.552]
+    2024 Full year                    Delta=+1.041 [+0.118,+1.894]
+
+  Evaluating seed 1 at spread=0.00 pts...
+    2008 GFC                          Delta=-3.448 [-6.029,-0.690]
+    2017 Calm                         Delta=-0.018 [-0.695,+0.658]
+    2018 Volmageddon                  Delta=-1.254 [-2.389,+0.365]
+    2020 COVID                        Delta=-0.943 [-3.759,+2.348]
+    2022 Rate shock                   Delta=-1.395 [-3.377,-0.249]
+    2023 SVB                          Delta=+0.068 [-0.710,+0.610]
+    2024 Full year                    Delta=+1.172 [+0.282,+1.841]
+
+  Evaluating seed 1 at spread=0.05 pts...
+    2008 GFC                          Delta=-3.448 [-6.029,-0.691]
+    2017 Calm                         Delta=-0.018 [-0.695,+0.658]
+    2018 Volmageddon                  Delta=-1.254 [-2.389,+0.365]
+    2020 COVID                        Delta=-0.943 [-3.759,+2.347]
+    2022 Rate shock                   Delta=-1.395 [-3.377,-0.249]
+    2023 SVB                          Delta=+0.068 [-0.710,+0.610]
+    2024 Full year                    Delta=+1.172 [+0.282,+1.841]
+
+  Evaluating seed 1 at spread=0.10 pts...
+    2008 GFC                          Delta=-3.448 [-6.029,-0.691]
+    2017 Calm                         Delta=-0.018 [-0.695,+0.658]
+    2018 Volmageddon                  Delta=-1.254 [-2.389,+0.365]
+    2020 COVID                        Delta=-0.943 [-3.759,+2.347]
+    2022 Rate shock                   Delta=-1.395 [-3.377,-0.249]
+    2023 SVB                          Delta=+0.068 [-0.710,+0.610]
+    2024 Full year                    Delta=+1.172 [+0.282,+1.841]
+
+  Evaluating seed 1 at spread=0.20 pts...
+    2008 GFC                          Delta=-3.448 [-6.029,-0.691]
+    2017 Calm                         Delta=-0.018 [-0.695,+0.658]
+    2018 Volmageddon                  Delta=-1.254 [-2.389,+0.365]
+    2020 COVID                        Delta=-0.943 [-3.759,+2.347]
+    2022 Rate shock                   Delta=-1.395 [-3.377,-0.249]
+    2023 SVB                          Delta=+0.068 [-0.710,+0.610]
+    2024 Full year                    Delta=+1.172 [+0.282,+1.841]
+
+  Evaluating seed 1 at spread=0.30 pts...
+    2008 GFC                          Delta=-3.448 [-6.029,-0.691]
+    2017 Calm                         Delta=-0.019 [-0.695,+0.658]
+    2018 Volmageddon                  Delta=-1.254 [-2.389,+0.365]
+    2020 COVID                        Delta=-0.944 [-3.760,+2.347]
+    2022 Rate shock                   Delta=-1.395 [-3.378,-0.249]
+    2023 SVB                          Delta=+0.068 [-0.710,+0.610]
+    2024 Full year                    Delta=+1.172 [+0.282,+1.841]
+
+  Evaluating seed 2 at spread=0.00 pts...
+    2008 GFC                          Delta=-2.090 [-4.915,+2.186]
+    2017 Calm                         Delta=-0.701 [-1.873,+0.564]
+    2018 Volmageddon                  Delta=-0.094 [-0.903,+0.784]
+    2020 COVID                        Delta=-1.934 [-1.991,+4.251]
+    2022 Rate shock                   Delta=-0.760 [-2.274,+0.736]
+    2023 SVB                          Delta=-0.758 [-1.869,+0.384]
+    2024 Full year                    Delta=+0.927 [+0.003,+1.652]
+
+  Evaluating seed 2 at spread=0.05 pts...
+    2008 GFC                          Delta=-2.090 [-4.915,+2.185]
+    2017 Calm                         Delta=-0.701 [-1.873,+0.564]
+    2018 Volmageddon                  Delta=-0.094 [-0.903,+0.784]
+    2020 COVID                        Delta=-1.935 [-1.991,+4.251]
+    2022 Rate shock                   Delta=-0.760 [-2.274,+0.736]
+    2023 SVB                          Delta=-0.758 [-1.869,+0.384]
+    2024 Full year                    Delta=+0.926 [+0.003,+1.651]
+
+  Evaluating seed 2 at spread=0.10 pts...
+    2008 GFC                          Delta=-2.090 [-4.915,+2.185]
+    2017 Calm                         Delta=-0.701 [-1.873,+0.564]
+    2018 Volmageddon                  Delta=-0.094 [-0.903,+0.783]
+    2020 COVID                        Delta=-1.935 [-1.992,+4.251]
+    2022 Rate shock                   Delta=-0.760 [-2.274,+0.736]
+    2023 SVB                          Delta=-0.758 [-1.869,+0.384]
+    2024 Full year                    Delta=+0.926 [+0.003,+1.651]
+
+  Evaluating seed 2 at spread=0.20 pts...
+    2008 GFC                          Delta=-2.090 [-4.915,+2.185]
+    2017 Calm                         Delta=-0.701 [-1.874,+0.564]
+    2018 Volmageddon                  Delta=-0.095 [-0.904,+0.783]
+    2020 COVID                        Delta=-1.935 [-1.992,+4.251]
+    2022 Rate shock                   Delta=-0.761 [-2.275,+0.736]
+    2023 SVB                          Delta=-0.758 [-1.869,+0.384]
+    2024 Full year                    Delta=+0.926 [+0.003,+1.651]
+
+  Evaluating seed 2 at spread=0.30 pts...
+    2008 GFC                          Delta=-2.090 [-4.916,+2.185]
+    2017 Calm                         Delta=-0.701 [-1.874,+0.564]
+    2018 Volmageddon                  Delta=-0.095 [-0.904,+0.783]
+    2020 COVID                        Delta=-1.935 [-1.992,+4.251]
+    2022 Rate shock                   Delta=-0.761 [-2.275,+0.736]
+    2023 SVB                          Delta=-0.758 [-1.870,+0.384]
+    2024 Full year                    Delta=+0.926 [+0.003,+1.651]
+
+========================================================================
+AGGREGATED RESULTS (mean +/- seed-std across seeds)
+========================================================================
+Window                                sp=0.0     sp=0.05      sp=0.1      sp=0.2      sp=0.3
+--------------------------------------------------------------------------------------------
+2008 GFC                            -2.53+/-0.65    -2.53+/-0.65    -2.53+/-0.65    -2.53+/-0.65    -2.53+/-0.65
+2017 Calm                           -0.44+/-0.30    -0.44+/-0.30    -0.44+/-0.30    -0.44+/-0.30    -0.44+/-0.30
+2018 Volmageddon                    -0.44+/-0.57    -0.44+/-0.57    -0.44+/-0.57    -0.44+/-0.57    -0.44+/-0.57
+2020 COVID                          -1.36+/-0.42    -1.36+/-0.42    -1.36+/-0.42    -1.36+/-0.42    -1.37+/-0.42
+2022 Rate shock                     -0.93+/-0.33    -0.93+/-0.33    -0.93+/-0.33    -0.93+/-0.33    -0.93+/-0.33
+2023 SVB                            -0.35+/-0.34    -0.35+/-0.34    -0.35+/-0.34    -0.35+/-0.34    -0.35+/-0.34
+2024 Full year                      +1.05+/-0.10    +1.05+/-0.10    +1.05+/-0.10    +1.05+/-0.10    +1.05+/-0.10
+
+Breakeven spread on 2024 Full year:
+  spread=0.00pts  Delta_2024=+1.047  above breakeven [OK]
+  spread=0.05pts  Delta_2024=+1.047  above breakeven [OK]
+  spread=0.10pts  Delta_2024=+1.046  above breakeven [OK]
+  spread=0.20pts  Delta_2024=+1.046  above breakeven [OK]
+  spread=0.30pts  Delta_2024=+1.046  above breakeven [OK]
+
+  Win persists at all tested spread levels
+
+Results written -> results/vix_costs/spread_sensitivity_results.txt
+Figure written -> results/vix_costs/spread_sensitivity.png

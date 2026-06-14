@@ -1,0 +1,376 @@
+========================================================================
+GATE THRESHOLD VALIDATION  (2024 held out)
+Sweep theta in [2.0, 2.5, 3.0, 3.5]   w=0.3  5 seeds x 400 epochs
+Selection criterion: argmax mean(Delta_2022, Delta_2023) s.t. COVID mean > -2.5 AND std < 2.0
+========================================================================
+
+------------------------------------------------------------
+theta = 2.0
+  seed 0...
+ep    1  loss=+197.609  CVaR_train=-175.287  CVaR_val=-49.541  gate(thr=2.000, sc=0.300)
+ep   50  loss=+168.061  CVaR_train=-149.464  CVaR_val=-49.771  gate(thr=2.000, sc=0.300)
+ep  100  loss=+148.452  CVaR_train=-131.249  CVaR_val=-36.283  gate(thr=2.000, sc=0.300)
+ep  150  loss=+111.268  CVaR_train=-98.249  CVaR_val=-36.810  gate(thr=2.000, sc=0.300)
+ep  200  loss=+131.252  CVaR_train=-118.610  CVaR_val=-32.103  gate(thr=2.000, sc=0.300)
+ep  250  loss=+118.111  CVaR_train=-107.915  CVaR_val=-30.362  gate(thr=2.000, sc=0.300)
+ep  300  loss=+126.091  CVaR_train=-118.326  CVaR_val=-35.715  gate(thr=2.000, sc=0.300)
+ep  350  loss=+131.583  CVaR_train=-122.764  CVaR_val=-33.320  gate(thr=2.000, sc=0.300)
+ep  400  loss=+140.743  CVaR_train=-133.437  CVaR_val=-39.862  gate(thr=2.000, sc=0.300)
+    2022 Rate shock                  Delta=-1.959
+    2023 SVB / banking               Delta=-1.829
+    2020 COVID                       Delta=-3.227
+  seed 1...
+ep    1  loss=+158.894  CVaR_train=-141.292  CVaR_val=-50.463  gate(thr=2.000, sc=0.300)
+ep   50  loss=+171.600  CVaR_train=-152.739  CVaR_val=-44.911  gate(thr=2.000, sc=0.300)
+ep  100  loss=+160.530  CVaR_train=-142.619  CVaR_val=-40.939  gate(thr=2.000, sc=0.300)
+ep  150  loss=+136.657  CVaR_train=-120.763  CVaR_val=-33.882  gate(thr=2.000, sc=0.300)
+ep  200  loss=+125.306  CVaR_train=-113.298  CVaR_val=-36.458  gate(thr=2.000, sc=0.300)
+ep  250  loss=+108.965  CVaR_train=-99.722  CVaR_val=-37.362  gate(thr=2.000, sc=0.300)
+ep  300  loss=+111.499  CVaR_train=-104.569  CVaR_val=-31.691  gate(thr=2.000, sc=0.300)
+ep  350  loss=+146.547  CVaR_train=-137.794  CVaR_val=-30.762  gate(thr=2.000, sc=0.300)
+ep  400  loss=+170.501  CVaR_train=-161.893  CVaR_val=-38.640  gate(thr=2.000, sc=0.300)
+    2022 Rate shock                  Delta=-1.613
+    2023 SVB / banking               Delta=-1.724
+    2020 COVID                       Delta=-3.007
+  seed 2...
+ep    1  loss=+172.649  CVaR_train=-154.223  CVaR_val=-53.134  gate(thr=2.000, sc=0.300)
+ep   50  loss=+178.776  CVaR_train=-159.121  CVaR_val=-49.513  gate(thr=2.000, sc=0.300)
+ep  100  loss=+160.400  CVaR_train=-142.722  CVaR_val=-43.972  gate(thr=2.000, sc=0.300)
+ep  150  loss=+147.123  CVaR_train=-130.018  CVaR_val=-33.224  gate(thr=2.000, sc=0.300)
+ep  200  loss=+134.217  CVaR_train=-118.979  CVaR_val=-31.745  gate(thr=2.000, sc=0.300)
+ep  250  loss=+136.578  CVaR_train=-122.997  CVaR_val=-28.997  gate(thr=2.000, sc=0.300)
+ep  300  loss=+113.279  CVaR_train=-104.244  CVaR_val=-33.147  gate(thr=2.000, sc=0.300)
+ep  350  loss=+130.729  CVaR_train=-122.774  CVaR_val=-33.959  gate(thr=2.000, sc=0.300)
+ep  400  loss=+129.530  CVaR_train=-123.825  CVaR_val=-37.185  gate(thr=2.000, sc=0.300)
+    2022 Rate shock                  Delta=-1.547
+    2023 SVB / banking               Delta=-1.763
+    2020 COVID                       Delta=-3.218
+  seed 3...
+ep    1  loss=+170.517  CVaR_train=-152.096  CVaR_val=-54.275  gate(thr=2.000, sc=0.300)
+ep   50  loss=+169.998  CVaR_train=-152.118  CVaR_val=-49.871  gate(thr=2.000, sc=0.300)
+ep  100  loss=+167.036  CVaR_train=-148.922  CVaR_val=-42.634  gate(thr=2.000, sc=0.300)
+ep  150  loss=+153.274  CVaR_train=-136.404  CVaR_val=-33.771  gate(thr=2.000, sc=0.300)
+ep  200  loss=+113.553  CVaR_train=-102.370  CVaR_val=-36.390  gate(thr=2.000, sc=0.300)
+ep  250  loss=+117.656  CVaR_train=-107.660  CVaR_val=-30.525  gate(thr=2.000, sc=0.300)
+ep  300  loss=+112.231  CVaR_train=-104.156  CVaR_val=-31.524  gate(thr=2.000, sc=0.300)
+ep  350  loss=+128.638  CVaR_train=-121.800  CVaR_val=-37.758  gate(thr=2.000, sc=0.300)
+ep  400  loss=+133.337  CVaR_train=-127.308  CVaR_val=-36.470  gate(thr=2.000, sc=0.300)
+    2022 Rate shock                  Delta=-1.322
+    2023 SVB / banking               Delta=-1.612
+    2020 COVID                       Delta=-2.947
+  seed 4...
+ep    1  loss=+173.979  CVaR_train=-154.283  CVaR_val=-51.171  gate(thr=2.000, sc=0.300)
+ep   50  loss=+158.264  CVaR_train=-140.873  CVaR_val=-45.193  gate(thr=2.000, sc=0.300)
+ep  100  loss=+152.485  CVaR_train=-135.093  CVaR_val=-39.707  gate(thr=2.000, sc=0.300)
+ep  150  loss=+123.687  CVaR_train=-110.149  CVaR_val=-33.223  gate(thr=2.000, sc=0.300)
+ep  200  loss=+106.450  CVaR_train=-97.007  CVaR_val=-30.443  gate(thr=2.000, sc=0.300)
+ep  250  loss=+106.591  CVaR_train=-98.386  CVaR_val=-33.785  gate(thr=2.000, sc=0.300)
+ep  300  loss=+129.164  CVaR_train=-120.746  CVaR_val=-37.855  gate(thr=2.000, sc=0.300)
+ep  350  loss=+150.959  CVaR_train=-141.071  CVaR_val=-32.310  gate(thr=2.000, sc=0.300)
+ep  400  loss=+120.574  CVaR_train=-114.329  CVaR_val=-37.496  gate(thr=2.000, sc=0.300)
+    2022 Rate shock                  Delta=-1.625
+    2023 SVB / banking               Delta=-1.656
+    2020 COVID                       Delta=-3.058
+
+  Aggregated (theta=2.0):
+    2022 Rate shock                  mean=-1.613  std=0.204
+    2023 SVB / banking               mean=-1.717  std=0.077
+    2020 COVID                       mean=-3.091  std=0.113
+
+------------------------------------------------------------
+theta = 2.5
+  seed 0...
+ep    1  loss=+197.609  CVaR_train=-175.287  CVaR_val=-49.541  gate(thr=2.500, sc=0.300)
+ep   50  loss=+168.120  CVaR_train=-149.494  CVaR_val=-49.681  gate(thr=2.500, sc=0.300)
+ep  100  loss=+148.494  CVaR_train=-131.214  CVaR_val=-36.086  gate(thr=2.500, sc=0.300)
+ep  150  loss=+111.640  CVaR_train=-98.452  CVaR_val=-36.966  gate(thr=2.500, sc=0.300)
+ep  200  loss=+131.654  CVaR_train=-118.736  CVaR_val=-32.493  gate(thr=2.500, sc=0.300)
+ep  250  loss=+118.802  CVaR_train=-108.304  CVaR_val=-30.429  gate(thr=2.500, sc=0.300)
+ep  300  loss=+126.293  CVaR_train=-118.216  CVaR_val=-35.909  gate(thr=2.500, sc=0.300)
+ep  350  loss=+132.286  CVaR_train=-123.076  CVaR_val=-33.426  gate(thr=2.500, sc=0.300)
+ep  400  loss=+140.817  CVaR_train=-133.137  CVaR_val=-40.249  gate(thr=2.500, sc=0.300)
+    2022 Rate shock                  Delta=-1.194
+    2023 SVB / banking               Delta=-1.077
+    2020 COVID                       Delta=-2.222
+  seed 1...
+ep    1  loss=+158.894  CVaR_train=-141.292  CVaR_val=-50.463  gate(thr=2.500, sc=0.300)
+ep   50  loss=+171.617  CVaR_train=-152.734  CVaR_val=-44.830  gate(thr=2.500, sc=0.300)
+ep  100  loss=+160.469  CVaR_train=-142.504  CVaR_val=-40.740  gate(thr=2.500, sc=0.300)
+ep  150  loss=+136.863  CVaR_train=-120.780  CVaR_val=-33.741  gate(thr=2.500, sc=0.300)
+ep  200  loss=+126.008  CVaR_train=-113.664  CVaR_val=-36.643  gate(thr=2.500, sc=0.300)
+ep  250  loss=+109.013  CVaR_train=-99.457  CVaR_val=-37.602  gate(thr=2.500, sc=0.300)
+ep  300  loss=+111.845  CVaR_train=-104.543  CVaR_val=-31.625  gate(thr=2.500, sc=0.300)
+ep  350  loss=+147.848  CVaR_train=-138.553  CVaR_val=-30.985  gate(thr=2.500, sc=0.300)
+ep  400  loss=+170.258  CVaR_train=-161.027  CVaR_val=-38.542  gate(thr=2.500, sc=0.300)
+    2022 Rate shock                  Delta=-0.886
+    2023 SVB / banking               Delta=-0.761
+    2020 COVID                       Delta=-1.761
+  seed 2...
+ep    1  loss=+172.649  CVaR_train=-154.223  CVaR_val=-53.134  gate(thr=2.500, sc=0.300)
+ep   50  loss=+178.815  CVaR_train=-159.146  CVaR_val=-49.482  gate(thr=2.500, sc=0.300)
+ep  100  loss=+160.473  CVaR_train=-142.754  CVaR_val=-43.865  gate(thr=2.500, sc=0.300)
+ep  150  loss=+147.348  CVaR_train=-130.122  CVaR_val=-33.094  gate(thr=2.500, sc=0.300)
+ep  200  loss=+134.360  CVaR_train=-118.954  CVaR_val=-31.679  gate(thr=2.500, sc=0.300)
+ep  250  loss=+136.887  CVaR_train=-123.034  CVaR_val=-29.044  gate(thr=2.500, sc=0.300)
+ep  300  loss=+114.001  CVaR_train=-104.595  CVaR_val=-33.420  gate(thr=2.500, sc=0.300)
+ep  350  loss=+130.731  CVaR_train=-122.506  CVaR_val=-34.367  gate(thr=2.500, sc=0.300)
+ep  400  loss=+130.257  CVaR_train=-124.183  CVaR_val=-37.183  gate(thr=2.500, sc=0.300)
+    2022 Rate shock                  Delta=-0.971
+    2023 SVB / banking               Delta=-1.229
+    2020 COVID                       Delta=-2.530
+  seed 3...
+ep    1  loss=+170.517  CVaR_train=-152.096  CVaR_val=-54.274  gate(thr=2.500, sc=0.300)
+ep   50  loss=+169.994  CVaR_train=-152.104  CVaR_val=-49.820  gate(thr=2.500, sc=0.300)
+ep  100  loss=+167.120  CVaR_train=-148.942  CVaR_val=-42.504  gate(thr=2.500, sc=0.300)
+ep  150  loss=+153.560  CVaR_train=-136.570  CVaR_val=-33.570  gate(thr=2.500, sc=0.300)
+ep  200  loss=+114.054  CVaR_train=-102.565  CVaR_val=-36.651  gate(thr=2.500, sc=0.300)
+ep  250  loss=+117.810  CVaR_train=-107.547  CVaR_val=-30.622  gate(thr=2.500, sc=0.300)
+ep  300  loss=+112.497  CVaR_train=-104.008  CVaR_val=-31.327  gate(thr=2.500, sc=0.300)
+ep  350  loss=+129.027  CVaR_train=-121.668  CVaR_val=-37.687  gate(thr=2.500, sc=0.300)
+ep  400  loss=+133.194  CVaR_train=-126.784  CVaR_val=-36.695  gate(thr=2.500, sc=0.300)
+    2022 Rate shock                  Delta=-0.968
+    2023 SVB / banking               Delta=-0.866
+    2020 COVID                       Delta=-1.997
+  seed 4...
+ep    1  loss=+173.979  CVaR_train=-154.283  CVaR_val=-51.167  gate(thr=2.500, sc=0.300)
+ep   50  loss=+158.380  CVaR_train=-140.926  CVaR_val=-45.017  gate(thr=2.500, sc=0.300)
+ep  100  loss=+152.671  CVaR_train=-135.128  CVaR_val=-39.352  gate(thr=2.500, sc=0.300)
+ep  150  loss=+125.266  CVaR_train=-111.378  CVaR_val=-33.174  gate(thr=2.500, sc=0.300)
+ep  200  loss=+106.835  CVaR_train=-97.035  CVaR_val=-30.712  gate(thr=2.500, sc=0.300)
+ep  250  loss=+107.584  CVaR_train=-98.973  CVaR_val=-33.960  gate(thr=2.500, sc=0.300)
+ep  300  loss=+130.494  CVaR_train=-121.519  CVaR_val=-37.716  gate(thr=2.500, sc=0.300)
+ep  350  loss=+151.130  CVaR_train=-140.771  CVaR_val=-32.258  gate(thr=2.500, sc=0.300)
+ep  400  loss=+120.684  CVaR_train=-114.084  CVaR_val=-37.795  gate(thr=2.500, sc=0.300)
+    2022 Rate shock                  Delta=-0.712
+    2023 SVB / banking               Delta=-0.755
+    2020 COVID                       Delta=-1.874
+
+  Aggregated (theta=2.5):
+    2022 Rate shock                  mean=-0.946  std=0.156
+    2023 SVB / banking               mean=-0.938  std=0.186
+    2020 COVID                       mean=-2.077  std=0.274
+
+------------------------------------------------------------
+theta = 3.0
+  seed 0...
+ep    1  loss=+197.609  CVaR_train=-175.287  CVaR_val=-49.540  gate(thr=3.000, sc=0.300)
+ep   50  loss=+168.116  CVaR_train=-149.472  CVaR_val=-49.575  gate(thr=3.000, sc=0.300)
+ep  100  loss=+148.473  CVaR_train=-131.144  CVaR_val=-35.886  gate(thr=3.000, sc=0.300)
+ep  150  loss=+111.850  CVaR_train=-98.554  CVaR_val=-37.170  gate(thr=3.000, sc=0.300)
+ep  200  loss=+131.868  CVaR_train=-118.849  CVaR_val=-32.982  gate(thr=3.000, sc=0.300)
+ep  250  loss=+119.140  CVaR_train=-108.498  CVaR_val=-30.664  gate(thr=3.000, sc=0.300)
+ep  300  loss=+125.911  CVaR_train=-117.612  CVaR_val=-36.083  gate(thr=3.000, sc=0.300)
+ep  350  loss=+132.736  CVaR_train=-123.220  CVaR_val=-33.693  gate(thr=3.000, sc=0.300)
+ep  400  loss=+141.827  CVaR_train=-133.874  CVaR_val=-40.403  gate(thr=3.000, sc=0.300)
+    2022 Rate shock                  Delta=-0.610
+    2023 SVB / banking               Delta=-0.394
+    2020 COVID                       Delta=-1.312
+  seed 1...
+ep    1  loss=+158.894  CVaR_train=-141.292  CVaR_val=-50.462  gate(thr=3.000, sc=0.300)
+ep   50  loss=+171.612  CVaR_train=-152.713  CVaR_val=-44.741  gate(thr=3.000, sc=0.300)
+ep  100  loss=+160.316  CVaR_train=-142.328  CVaR_val=-40.529  gate(thr=3.000, sc=0.300)
+ep  150  loss=+137.105  CVaR_train=-120.872  CVaR_val=-33.668  gate(thr=3.000, sc=0.300)
+ep  200  loss=+126.105  CVaR_train=-113.525  CVaR_val=-36.786  gate(thr=3.000, sc=0.300)
+ep  250  loss=+109.045  CVaR_train=-99.285  CVaR_val=-37.782  gate(thr=3.000, sc=0.300)
+ep  300  loss=+111.755  CVaR_train=-104.140  CVaR_val=-31.941  gate(thr=3.000, sc=0.300)
+ep  350  loss=+148.736  CVaR_train=-139.073  CVaR_val=-31.361  gate(thr=3.000, sc=0.300)
+ep  400  loss=+170.231  CVaR_train=-160.638  CVaR_val=-38.675  gate(thr=3.000, sc=0.300)
+    2022 Rate shock                  Delta=-1.420
+    2023 SVB / banking               Delta=+0.086
+    2020 COVID                       Delta=-0.669
+  seed 2...
+ep    1  loss=+172.649  CVaR_train=-154.223  CVaR_val=-53.133  gate(thr=3.000, sc=0.300)
+ep   50  loss=+178.847  CVaR_train=-159.165  CVaR_val=-49.439  gate(thr=3.000, sc=0.300)
+ep  100  loss=+160.535  CVaR_train=-142.783  CVaR_val=-43.759  gate(thr=3.000, sc=0.300)
+ep  150  loss=+147.467  CVaR_train=-130.152  CVaR_val=-32.972  gate(thr=3.000, sc=0.300)
+ep  200  loss=+134.507  CVaR_train=-119.012  CVaR_val=-31.741  gate(thr=3.000, sc=0.300)
+ep  250  loss=+137.191  CVaR_train=-123.108  CVaR_val=-29.012  gate(thr=3.000, sc=0.300)
+ep  300  loss=+114.267  CVaR_train=-104.538  CVaR_val=-33.387  gate(thr=3.000, sc=0.300)
+ep  350  loss=+131.152  CVaR_train=-122.670  CVaR_val=-34.478  gate(thr=3.000, sc=0.300)
+ep  400  loss=+130.751  CVaR_train=-124.452  CVaR_val=-37.128  gate(thr=3.000, sc=0.300)
+    2022 Rate shock                  Delta=-0.758
+    2023 SVB / banking               Delta=-0.714
+    2020 COVID                       Delta=-1.869
+  seed 3...
+ep    1  loss=+170.517  CVaR_train=-152.096  CVaR_val=-54.273  gate(thr=3.000, sc=0.300)
+ep   50  loss=+169.960  CVaR_train=-152.068  CVaR_val=-49.765  gate(thr=3.000, sc=0.300)
+ep  100  loss=+167.153  CVaR_train=-148.925  CVaR_val=-42.355  gate(thr=3.000, sc=0.300)
+ep  150  loss=+153.837  CVaR_train=-136.770  CVaR_val=-33.383  gate(thr=3.000, sc=0.300)
+ep  200  loss=+114.544  CVaR_train=-102.851  CVaR_val=-37.019  gate(thr=3.000, sc=0.300)
+ep  250  loss=+117.806  CVaR_train=-107.301  CVaR_val=-30.760  gate(thr=3.000, sc=0.300)
+ep  300  loss=+112.495  CVaR_train=-103.658  CVaR_val=-31.447  gate(thr=3.000, sc=0.300)
+ep  350  loss=+128.753  CVaR_train=-121.084  CVaR_val=-37.710  gate(thr=3.000, sc=0.300)
+ep  400  loss=+132.581  CVaR_train=-125.833  CVaR_val=-36.812  gate(thr=3.000, sc=0.300)
+    2022 Rate shock                  Delta=-0.851
+    2023 SVB / banking               Delta=-0.199
+    2020 COVID                       Delta=-1.150
+  seed 4...
+ep    1  loss=+173.979  CVaR_train=-154.283  CVaR_val=-51.165  gate(thr=3.000, sc=0.300)
+ep   50  loss=+158.446  CVaR_train=-140.956  CVaR_val=-44.879  gate(thr=3.000, sc=0.300)
+ep  100  loss=+152.672  CVaR_train=-135.049  CVaR_val=-39.042  gate(thr=3.000, sc=0.300)
+ep  150  loss=+126.605  CVaR_train=-112.443  CVaR_val=-33.346  gate(thr=3.000, sc=0.300)
+ep  200  loss=+107.672  CVaR_train=-97.619  CVaR_val=-31.013  gate(thr=3.000, sc=0.300)
+ep  250  loss=+108.045  CVaR_train=-99.146  CVaR_val=-34.215  gate(thr=3.000, sc=0.300)
+ep  300  loss=+130.978  CVaR_train=-121.631  CVaR_val=-37.737  gate(thr=3.000, sc=0.300)
+ep  350  loss=+151.169  CVaR_train=-140.466  CVaR_val=-32.461  gate(thr=3.000, sc=0.300)
+ep  400  loss=+120.515  CVaR_train=-113.775  CVaR_val=-38.179  gate(thr=3.000, sc=0.300)
+    2022 Rate shock                  Delta=-0.706
+    2023 SVB / banking               Delta=+0.011
+    2020 COVID                       Delta=-0.886
+
+  Aggregated (theta=3.0):
+    2022 Rate shock                  mean=-0.869  std=0.286
+    2023 SVB / banking               mean=-0.242  std=0.290
+    2020 COVID                       mean=-1.177  std=0.410
+
+------------------------------------------------------------
+theta = 3.5
+  seed 0...
+ep    1  loss=+197.609  CVaR_train=-175.287  CVaR_val=-49.538  gate(thr=3.500, sc=0.300)
+ep   50  loss=+168.061  CVaR_train=-149.414  CVaR_val=-49.499  gate(thr=3.500, sc=0.300)
+ep  100  loss=+148.455  CVaR_train=-131.097  CVaR_val=-35.736  gate(thr=3.500, sc=0.300)
+ep  150  loss=+111.971  CVaR_train=-98.604  CVaR_val=-37.450  gate(thr=3.500, sc=0.300)
+ep  200  loss=+132.062  CVaR_train=-118.978  CVaR_val=-33.334  gate(thr=3.500, sc=0.300)
+ep  250  loss=+119.288  CVaR_train=-108.568  CVaR_val=-30.893  gate(thr=3.500, sc=0.300)
+ep  300  loss=+125.805  CVaR_train=-117.373  CVaR_val=-36.153  gate(thr=3.500, sc=0.300)
+ep  350  loss=+133.216  CVaR_train=-123.529  CVaR_val=-34.029  gate(thr=3.500, sc=0.300)
+ep  400  loss=+142.046  CVaR_train=-133.900  CVaR_val=-40.783  gate(thr=3.500, sc=0.300)
+    2022 Rate shock                  Delta=-0.726
+    2023 SVB / banking               Delta=+0.019
+    2020 COVID                       Delta=-0.762
+  seed 1...
+ep    1  loss=+158.894  CVaR_train=-141.292  CVaR_val=-50.460  gate(thr=3.500, sc=0.300)
+ep   50  loss=+171.587  CVaR_train=-152.686  CVaR_val=-44.682  gate(thr=3.500, sc=0.300)
+ep  100  loss=+160.173  CVaR_train=-142.189  CVaR_val=-40.389  gate(thr=3.500, sc=0.300)
+ep  150  loss=+137.139  CVaR_train=-120.837  CVaR_val=-33.623  gate(thr=3.500, sc=0.300)
+ep  200  loss=+125.705  CVaR_train=-113.097  CVaR_val=-36.879  gate(thr=3.500, sc=0.300)
+ep  250  loss=+109.021  CVaR_train=-99.227  CVaR_val=-37.903  gate(thr=3.500, sc=0.300)
+ep  300  loss=+111.640  CVaR_train=-103.825  CVaR_val=-32.229  gate(thr=3.500, sc=0.300)
+ep  350  loss=+149.384  CVaR_train=-139.491  CVaR_val=-31.776  gate(thr=3.500, sc=0.300)
+ep  400  loss=+170.416  CVaR_train=-160.531  CVaR_val=-38.332  gate(thr=3.500, sc=0.300)
+    2022 Rate shock                  Delta=-2.225
+    2023 SVB / banking               Delta=+0.082
+    2020 COVID                       Delta=-4.552
+  seed 2...
+ep    1  loss=+172.649  CVaR_train=-154.223  CVaR_val=-53.131  gate(thr=3.500, sc=0.300)
+ep   50  loss=+178.857  CVaR_train=-159.167  CVaR_val=-49.403  gate(thr=3.500, sc=0.300)
+ep  100  loss=+160.550  CVaR_train=-142.782  CVaR_val=-43.675  gate(thr=3.500, sc=0.300)
+ep  150  loss=+147.523  CVaR_train=-130.167  CVaR_val=-32.891  gate(thr=3.500, sc=0.300)
+ep  200  loss=+134.659  CVaR_train=-119.102  CVaR_val=-31.817  gate(thr=3.500, sc=0.300)
+ep  250  loss=+137.123  CVaR_train=-122.920  CVaR_val=-29.156  gate(thr=3.500, sc=0.300)
+ep  300  loss=+114.268  CVaR_train=-104.353  CVaR_val=-33.616  gate(thr=3.500, sc=0.300)
+ep  350  loss=+131.343  CVaR_train=-122.728  CVaR_val=-34.729  gate(thr=3.500, sc=0.300)
+ep  400  loss=+130.978  CVaR_train=-124.473  CVaR_val=-37.188  gate(thr=3.500, sc=0.300)
+    2022 Rate shock                  Delta=-0.619
+    2023 SVB / banking               Delta=-0.364
+    2020 COVID                       Delta=-1.426
+  seed 3...
+ep    1  loss=+170.517  CVaR_train=-152.096  CVaR_val=-54.273  gate(thr=3.500, sc=0.300)
+ep   50  loss=+169.920  CVaR_train=-152.032  CVaR_val=-49.728  gate(thr=3.500, sc=0.300)
+ep  100  loss=+167.153  CVaR_train=-148.901  CVaR_val=-42.244  gate(thr=3.500, sc=0.300)
+ep  150  loss=+154.218  CVaR_train=-137.091  CVaR_val=-33.255  gate(thr=3.500, sc=0.300)
+ep  200  loss=+114.958  CVaR_train=-103.139  CVaR_val=-37.420  gate(thr=3.500, sc=0.300)
+ep  250  loss=+117.927  CVaR_train=-107.199  CVaR_val=-31.016  gate(thr=3.500, sc=0.300)
+ep  300  loss=+112.301  CVaR_train=-103.270  CVaR_val=-31.769  gate(thr=3.500, sc=0.300)
+ep  350  loss=+128.887  CVaR_train=-120.968  CVaR_val=-37.641  gate(thr=3.500, sc=0.300)
+ep  400  loss=+132.671  CVaR_train=-125.670  CVaR_val=-37.296  gate(thr=3.500, sc=0.300)
+    2022 Rate shock                  Delta=-1.601
+    2023 SVB / banking               Delta=+0.310
+    2020 COVID                       Delta=-2.573
+  seed 4...
+ep    1  loss=+173.979  CVaR_train=-154.283  CVaR_val=-51.163  gate(thr=3.500, sc=0.300)
+ep   50  loss=+158.476  CVaR_train=-140.979  CVaR_val=-44.811  gate(thr=3.500, sc=0.300)
+ep  100  loss=+152.669  CVaR_train=-135.023  CVaR_val=-38.898  gate(thr=3.500, sc=0.300)
+ep  150  loss=+126.832  CVaR_train=-112.611  CVaR_val=-33.455  gate(thr=3.500, sc=0.300)
+ep  200  loss=+108.271  CVaR_train=-98.101  CVaR_val=-31.161  gate(thr=3.500, sc=0.300)
+ep  250  loss=+108.217  CVaR_train=-99.194  CVaR_val=-34.393  gate(thr=3.500, sc=0.300)
+ep  300  loss=+130.843  CVaR_train=-121.327  CVaR_val=-37.697  gate(thr=3.500, sc=0.300)
+ep  350  loss=+151.142  CVaR_train=-140.276  CVaR_val=-32.566  gate(thr=3.500, sc=0.300)
+ep  400  loss=+120.432  CVaR_train=-113.579  CVaR_val=-38.270  gate(thr=3.500, sc=0.300)
+    2022 Rate shock                  Delta=-1.152
+    2023 SVB / banking               Delta=+0.308
+    2020 COVID                       Delta=-0.491
+
+  Aggregated (theta=3.5):
+    2022 Rate shock                  mean=-1.265  std=0.592
+    2023 SVB / banking               mean=+0.071  std=0.247
+    2020 COVID                       mean=-1.961  std=1.481
+
+========================================================================
+THRESHOLD SELECTION
+========================================================================
+  theta=2.0  val_score=-1.665  COVID mean=-3.091 std=0.113  [FAIL] violates COVID constraint
+  theta=2.5  val_score=-0.942  COVID mean=-2.077 std=0.274  [OK] feasible
+  theta=3.0  val_score=-0.555  COVID mean=-1.177 std=0.410  [OK] feasible
+  theta=3.5  val_score=-0.597  COVID mean=-1.961 std=1.481  [OK] feasible
+
+  ***  Selected theta* = 3.0  (val_score=-0.555)
+
+========================================================================
+FINAL TEST ON HELD-OUT 2024  (theta* = 3.0)
+========================================================================
+  seed 0 -- re-training at theta*=3.0...
+ep    1  loss=+197.609  CVaR_train=-175.287  CVaR_val=-49.540  gate(thr=3.000, sc=0.300)
+ep   50  loss=+168.116  CVaR_train=-149.472  CVaR_val=-49.575  gate(thr=3.000, sc=0.300)
+ep  100  loss=+148.473  CVaR_train=-131.144  CVaR_val=-35.886  gate(thr=3.000, sc=0.300)
+ep  150  loss=+111.850  CVaR_train=-98.554  CVaR_val=-37.170  gate(thr=3.000, sc=0.300)
+ep  200  loss=+131.868  CVaR_train=-118.849  CVaR_val=-32.982  gate(thr=3.000, sc=0.300)
+ep  250  loss=+119.140  CVaR_train=-108.498  CVaR_val=-30.664  gate(thr=3.000, sc=0.300)
+ep  300  loss=+125.911  CVaR_train=-117.612  CVaR_val=-36.083  gate(thr=3.000, sc=0.300)
+ep  350  loss=+132.736  CVaR_train=-123.220  CVaR_val=-33.693  gate(thr=3.000, sc=0.300)
+ep  400  loss=+141.827  CVaR_train=-133.874  CVaR_val=-40.403  gate(thr=3.000, sc=0.300)
+    2024 Delta = +1.036
+  seed 1 -- re-training at theta*=3.0...
+ep    1  loss=+158.894  CVaR_train=-141.292  CVaR_val=-50.462  gate(thr=3.000, sc=0.300)
+ep   50  loss=+171.612  CVaR_train=-152.713  CVaR_val=-44.741  gate(thr=3.000, sc=0.300)
+ep  100  loss=+160.316  CVaR_train=-142.328  CVaR_val=-40.529  gate(thr=3.000, sc=0.300)
+ep  150  loss=+137.105  CVaR_train=-120.872  CVaR_val=-33.668  gate(thr=3.000, sc=0.300)
+ep  200  loss=+126.105  CVaR_train=-113.525  CVaR_val=-36.786  gate(thr=3.000, sc=0.300)
+ep  250  loss=+109.045  CVaR_train=-99.285  CVaR_val=-37.782  gate(thr=3.000, sc=0.300)
+ep  300  loss=+111.755  CVaR_train=-104.140  CVaR_val=-31.941  gate(thr=3.000, sc=0.300)
+ep  350  loss=+148.736  CVaR_train=-139.073  CVaR_val=-31.361  gate(thr=3.000, sc=0.300)
+ep  400  loss=+170.231  CVaR_train=-160.638  CVaR_val=-38.675  gate(thr=3.000, sc=0.300)
+    2024 Delta = +1.213
+  seed 2 -- re-training at theta*=3.0...
+ep    1  loss=+172.649  CVaR_train=-154.223  CVaR_val=-53.133  gate(thr=3.000, sc=0.300)
+ep   50  loss=+178.847  CVaR_train=-159.165  CVaR_val=-49.439  gate(thr=3.000, sc=0.300)
+ep  100  loss=+160.535  CVaR_train=-142.783  CVaR_val=-43.759  gate(thr=3.000, sc=0.300)
+ep  150  loss=+147.467  CVaR_train=-130.152  CVaR_val=-32.972  gate(thr=3.000, sc=0.300)
+ep  200  loss=+134.507  CVaR_train=-119.012  CVaR_val=-31.741  gate(thr=3.000, sc=0.300)
+ep  250  loss=+137.191  CVaR_train=-123.108  CVaR_val=-29.012  gate(thr=3.000, sc=0.300)
+ep  300  loss=+114.267  CVaR_train=-104.538  CVaR_val=-33.387  gate(thr=3.000, sc=0.300)
+ep  350  loss=+131.152  CVaR_train=-122.670  CVaR_val=-34.478  gate(thr=3.000, sc=0.300)
+ep  400  loss=+130.751  CVaR_train=-124.452  CVaR_val=-37.128  gate(thr=3.000, sc=0.300)
+    2024 Delta = +0.949
+  seed 3 -- re-training at theta*=3.0...
+ep    1  loss=+170.517  CVaR_train=-152.096  CVaR_val=-54.273  gate(thr=3.000, sc=0.300)
+ep   50  loss=+169.960  CVaR_train=-152.068  CVaR_val=-49.765  gate(thr=3.000, sc=0.300)
+ep  100  loss=+167.153  CVaR_train=-148.925  CVaR_val=-42.355  gate(thr=3.000, sc=0.300)
+ep  150  loss=+153.837  CVaR_train=-136.770  CVaR_val=-33.383  gate(thr=3.000, sc=0.300)
+ep  200  loss=+114.544  CVaR_train=-102.851  CVaR_val=-37.019  gate(thr=3.000, sc=0.300)
+ep  250  loss=+117.806  CVaR_train=-107.301  CVaR_val=-30.760  gate(thr=3.000, sc=0.300)
+ep  300  loss=+112.495  CVaR_train=-103.658  CVaR_val=-31.447  gate(thr=3.000, sc=0.300)
+ep  350  loss=+128.753  CVaR_train=-121.084  CVaR_val=-37.710  gate(thr=3.000, sc=0.300)
+ep  400  loss=+132.581  CVaR_train=-125.833  CVaR_val=-36.812  gate(thr=3.000, sc=0.300)
+    2024 Delta = +1.194
+  seed 4 -- re-training at theta*=3.0...
+ep    1  loss=+173.979  CVaR_train=-154.283  CVaR_val=-51.165  gate(thr=3.000, sc=0.300)
+ep   50  loss=+158.446  CVaR_train=-140.956  CVaR_val=-44.879  gate(thr=3.000, sc=0.300)
+ep  100  loss=+152.672  CVaR_train=-135.049  CVaR_val=-39.042  gate(thr=3.000, sc=0.300)
+ep  150  loss=+126.605  CVaR_train=-112.443  CVaR_val=-33.346  gate(thr=3.000, sc=0.300)
+ep  200  loss=+107.672  CVaR_train=-97.619  CVaR_val=-31.013  gate(thr=3.000, sc=0.300)
+ep  250  loss=+108.045  CVaR_train=-99.146  CVaR_val=-34.215  gate(thr=3.000, sc=0.300)
+ep  300  loss=+130.978  CVaR_train=-121.631  CVaR_val=-37.737  gate(thr=3.000, sc=0.300)
+ep  350  loss=+151.169  CVaR_train=-140.466  CVaR_val=-32.461  gate(thr=3.000, sc=0.300)
+ep  400  loss=+120.515  CVaR_train=-113.775  CVaR_val=-38.179  gate(thr=3.000, sc=0.300)
+    2024 Delta = +1.171
+
+  2024 Final Test:  mean Delta = +1.112  std = 0.103
+  Pre-registered pass (mean>0 AND std<|mean|): [OK] PASS
+
+  Comparison:
+    Week-13 (theta selected on all 7 windows): +1.11 +/- 0.10
+    This run (theta selected on 2022-23 only): +1.112 +/- 0.103
+
+  Results written -> results/gate_validation/threshold_selection_results.txt
+  Figure written -> results/gate_validation/threshold_selection.png

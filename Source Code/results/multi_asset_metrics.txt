@@ -1,0 +1,15 @@
+Week 6 Multi-Asset Spread Call — Results
+==================================================
+Epochs: 800, batch: 256, N_test: 4000
+
+Training rho_12 = 0.5
+  Margrabe  : mean=-7.824  std=3.163  CVaR95=-14.732
+  Deep (S+VS): mean=+51.861  std=30.247  CVaR95=-7.411
+  Improvement: +7.321
+
+Correlation sweep (policy trained at rho=0.5):
+  rho=-0.50   Margrabe= -24.25   Deep= -11.22   delta=+13.03
+  rho=+0.00   Margrabe= -20.14   Deep=  -9.02   delta=+11.11
+  rho=+0.30   Margrabe= -17.34   Deep=  -6.29   delta=+11.05
+  rho=+0.50   Margrabe= -14.86   Deep=  -5.46   delta=+9.40
+  rho=+0.80   Margrabe= -10.17   Deep=  -2.48   delta=+7.69

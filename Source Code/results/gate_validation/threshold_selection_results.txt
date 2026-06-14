@@ -1,0 +1,25 @@
+GATE THRESHOLD VALIDATION -- STEP 1 POST-WEEK-13
+========================================================================
+
+epochs=400  seeds=5  N=512  lr=0.0001  lam=0.5  width=0.3
+
+SELECTION CRITERION (pre-registered):
+  theta* = argmax mean(Delta_2022, Delta_2023) s.t. COVID mean > -2.5 AND std < 2.0
+
+SWEEP (validation + COVID sanity windows only):
+theta   val_score   COVID mean  COVID std   feasible
+2.0        -1.665       -3.091      0.113         no
+2.5        -0.942       -2.077      0.274        yes
+3.0        -0.555       -1.177      0.410        yes
+3.5        -0.597       -1.961      1.481        yes
+
+Selected theta* = 3.0
+
+HELD-OUT 2024 RESULT (theta* = 3.0):
+  Per-seed Delta: ['+1.036', '+1.213', '+0.949', '+1.194', '+1.171']
+  mean = +1.112  std = 0.103
+  Pre-registered pass: PASS
+
+Comparison:
+  Week-13 (test-set tuned):   +1.11 +/- 0.10
+  This run (val-set selected): +1.112 +/- 0.103

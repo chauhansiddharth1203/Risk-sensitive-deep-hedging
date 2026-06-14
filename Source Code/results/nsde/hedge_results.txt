@@ -1,0 +1,18 @@
+NEURAL SDE HEDGER RESULTS
+========================================================================
+
+seeds=5  epochs=400
+Gate: theta=3.0  width=0.3
+
+Window                            mean Delta     std
+----------------------------------------------------
+2008 GFC                              -1.126   0.077
+2017 Calm                             -1.357   0.041
+2018 Volmageddon                      +0.323   0.015
+2020 COVID                            -2.937   0.125
+2022 Rate shock                       -3.016   0.046
+2023 SVB                              -1.554   0.075
+2024 Full year                        -0.486   0.036
+
+COVID: NSDE=-2.937  bootstrap=-1.177
+Decision: Rule1=FAIL  Rule2=FAIL

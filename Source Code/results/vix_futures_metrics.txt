@@ -1,0 +1,41 @@
+Sprint 2 — VIX-as-vega, weekly rebalancing
+========================================================================
+
+Training: weekly SPY+VIX block bootstrap, 2005-2020
+Testing : overlapping weekly 30-day windows, all periods
+
+2008 GFC (in-train)  (n=89 windows)
+  BS    CVaR95 = -13.545  [-14.168, -11.035]  std=3.600
+  Deep  CVaR95 = -18.752  [-24.051, -12.655]  std=8.518
+  Δ(Deep-BS)   =  -5.207  [-10.369, +0.185]
+
+2017 Calm (in-train)  (n=72 windows)
+  BS    CVaR95 =  -3.921  [-5.467, -2.679]  std=0.974
+  Deep  CVaR95 = -12.187  [-16.455, -8.113]  std=7.135
+  Δ(Deep-BS)   =  -8.266  [-13.311, -4.051]
+
+2018 Volmageddon (in-train)  (n=45 windows)
+  BS    CVaR95 =  -4.353  [-4.388, -3.544]  std=1.450
+  Deep  CVaR95 = -15.109  [-15.343, -11.221]  std=13.859
+  Δ(Deep-BS)   = -10.756  [-11.565, -6.851]
+
+2020 COVID (in-train)  (n=55 windows)
+  BS    CVaR95 = -13.813  [-14.004, -9.630]  std=3.333
+  Deep  CVaR95 = -23.036  [-24.759, -15.056]  std=18.160
+  Δ(Deep-BS)   =  -9.223  [-10.826, -5.059]
+
+2022 Rate shock (OOT)  (n=45 windows)
+  BS    CVaR95 =  -7.547  [-8.082, -5.458]  std=2.315
+  Deep  CVaR95 = -15.439  [-16.758, -11.806]  std=6.900
+  Δ(Deep-BS)   =  -7.892  [-9.747, -5.784]
+
+2023 SVB / banking (OOT)  (n=45 windows)
+  BS    CVaR95 =  -6.209  [-7.957, -3.830]  std=1.573
+  Deep  CVaR95 = -13.797  [-13.973, -10.870]  std=6.460
+  Δ(Deep-BS)   =  -7.587  [-9.966, -4.684]
+
+2024 Full year (OOT)  (n=46 windows)
+  BS    CVaR95 =  -5.443  [-5.650, -4.087]  std=1.458
+  Deep  CVaR95 = -13.928  [-14.557, -9.875]  std=8.277
+  Δ(Deep-BS)   =  -8.485  [-10.103, -4.351]
+

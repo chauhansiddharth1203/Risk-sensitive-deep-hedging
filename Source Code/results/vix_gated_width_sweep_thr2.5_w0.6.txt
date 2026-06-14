@@ -1,0 +1,66 @@
+Regime-gated multi-seed — mode=calm
+========================================================================
+seeds=5  epochs=400  N=512  lr=0.0001  lam=0.5
+gate init: thr=2.5  scale=0.6  frozen=True
+
+Window                              mean Δ     std      min      max
+2008 GFC (in-train)                 -2.170   0.117   -2.299   -1.971
+2017 Calm (in-train)                -1.280   0.139   -1.530   -1.132
+2018 Volmageddon (in-train)         -0.288   0.230   -0.577   -0.054
+2020 COVID (in-train)               -2.052   0.254   -2.486   -1.715
+2022 Rate shock (OOT)               -0.930   0.129   -1.142   -0.752
+2023 SVB / banking (OOT)            -0.915   0.167   -1.194   -0.714
+2024 Full year (OOT)                +0.572   0.134   +0.383   +0.705
+
+Final gate parameters per seed:
+  seed 0: threshold=+2.5000  scale=+0.6000
+  seed 1: threshold=+2.5000  scale=+0.6000
+  seed 2: threshold=+2.5000  scale=+0.6000
+  seed 3: threshold=+2.5000  scale=+0.6000
+  seed 4: threshold=+2.5000  scale=+0.6000
+
+seed 0:
+  2008 GFC (in-train)               Δ= -2.121
+  2017 Calm (in-train)              Δ= -1.530
+  2018 Volmageddon (in-train)       Δ= -0.548
+  2020 COVID (in-train)             Δ= -2.126
+  2022 Rate shock (OOT)             Δ= -1.142
+  2023 SVB / banking (OOT)          Δ= -1.003
+  2024 Full year (OOT)              Δ= +0.383
+
+seed 1:
+  2008 GFC (in-train)               Δ= -2.192
+  2017 Calm (in-train)              Δ= -1.132
+  2018 Volmageddon (in-train)       Δ= -0.068
+  2020 COVID (in-train)             Δ= -1.715
+  2022 Rate shock (OOT)             Δ= -0.852
+  2023 SVB / banking (OOT)          Δ= -0.714
+  2024 Full year (OOT)              Δ= +0.705
+
+seed 2:
+  2008 GFC (in-train)               Δ= -2.268
+  2017 Calm (in-train)              Δ= -1.313
+  2018 Volmageddon (in-train)       Δ= -0.577
+  2020 COVID (in-train)             Δ= -2.486
+  2022 Rate shock (OOT)             Δ= -0.953
+  2023 SVB / banking (OOT)          Δ= -1.194
+  2024 Full year (OOT)              Δ= +0.437
+
+seed 3:
+  2008 GFC (in-train)               Δ= -2.299
+  2017 Calm (in-train)              Δ= -1.179
+  2018 Volmageddon (in-train)       Δ= -0.192
+  2020 COVID (in-train)             Δ= -1.954
+  2022 Rate shock (OOT)             Δ= -0.952
+  2023 SVB / banking (OOT)          Δ= -0.830
+  2024 Full year (OOT)              Δ= +0.651
+
+seed 4:
+  2008 GFC (in-train)               Δ= -1.971
+  2017 Calm (in-train)              Δ= -1.248
+  2018 Volmageddon (in-train)       Δ= -0.054
+  2020 COVID (in-train)             Δ= -1.978
+  2022 Rate shock (OOT)             Δ= -0.752
+  2023 SVB / banking (OOT)          Δ= -0.835
+  2024 Full year (OOT)              Δ= +0.684
+
